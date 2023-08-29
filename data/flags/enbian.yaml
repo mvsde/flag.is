@@ -1,0 +1,15 @@
+name: Enbian
+aliases:
+  - NBLNB
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Enbian
+aspect_ratio: 1.625
+colors:
+  - white
+  - yellow
+  - black
+  - purple
+patterns:
+  - stripes_horizontal
+  - symbol

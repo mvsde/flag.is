@@ -1,0 +1,14 @@
+name: Non-binary
+aliases:
+  - Enby
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Non-binary_gender
+aspect_ratio: 1.5
+colors:
+  - yellow
+  - white
+  - purple
+  - black
+patterns:
+  - stripes_horizontal

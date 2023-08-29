@@ -1,0 +1,7 @@
+{
+	"yaml.schemas": {
+		"schemas/colors.yaml": "/data/colors.yaml",
+		"schemas/flag.yaml": "/data/flags/*.yaml",
+		"schemas/patterns.yaml": "/data/patterns.yaml"
+	}
+}

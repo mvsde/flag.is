@@ -1,0 +1,10 @@
+name: Pluralian
+aspect_ratio: 1.66667
+colors:
+  - green
+  - red
+  - purple
+  - white
+patterns:
+  - stripes_horizontal
+  - symbol

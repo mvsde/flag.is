@@ -1,0 +1,8 @@
+name: Maverique
+aspect_ratio: 1.66667
+colors:
+  - yellow
+  - white
+  - orange
+patterns:
+  - stripes_horizontal

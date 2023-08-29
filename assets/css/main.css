@@ -1,0 +1,17 @@
+@layer base, components, utilities;
+
+/* Base */
+@import url("./base/tokens.css") layer(base);
+@import url("./base/global.css") layer(base);
+
+/* Components */
+@import url("./components/fieldset.css") layer(components);
+@import url("./components/footer.css") layer(components);
+@import url("./components/input.css") layer(components);
+@import url("./components/search.css") layer(components);
+@import url("./components/swatch.css") layer(components);
+
+/* Utilities */
+@import url("./utilities/container.css") layer(utilities);
+@import url("./utilities/display.css") layer(utilities);
+@import url("./utilities/margin.css") layer(utilities);

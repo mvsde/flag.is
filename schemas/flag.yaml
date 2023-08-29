@@ -1,0 +1,59 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: flag
+type: object
+required:
+  - name
+  - aspect_ratio
+additionalProperties: false
+properties:
+  name:
+    type: string
+  aliases:
+    type: array
+    items:
+      type: string
+  links:
+    type: array
+    items:
+      type: object
+      required:
+        - title
+        - href
+      additionalProperties: false
+      properties:
+        title:
+          type: string
+        href:
+          type: string
+          format: uri-reference
+  aspect_ratio:
+    type: number
+  colors:
+    type: array
+    items:
+      type: string
+      uniqueItems: true
+      enum:
+        - black
+        - blue
+        - brown
+        - gray
+        - green
+        - orange
+        - pink
+        - purple
+        - red
+        - white
+        - yellow
+  patterns:
+    type: array
+    items:
+      type: string
+      uniqueItems: true
+      enum:
+        - chevron
+        - solid
+        - stripes_diagonal
+        - stripes_horizontal
+        - stripes_vertical
+        - symbol

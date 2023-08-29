@@ -1,0 +1,39 @@
+.Input label small {
+	display: block;
+}
+
+/* Text */
+
+.Input--text {
+	display: flex;
+	flex-direction: column;
+}
+
+.Input--text label {
+	padding-block-end: 0.25rem;
+}
+
+.Input--text input {
+	border: var(--border-interactive);
+	border-radius: var(--border-radius);
+	padding-block: 0.75rem;
+	padding-inline: 1rem;
+}
+
+/* Checkbox */
+
+.Input--checkbox {
+	display: flex;
+}
+
+.Input--checkbox label {
+	flex-grow: 1;
+	padding-block-start: 0.15rem;
+	padding-inline-start: 0.5rem;
+}
+
+.Input--checkbox input {
+	block-size: 1.5rem;
+	flex-shrink: 0;
+	inline-size: 1.5rem;
+}

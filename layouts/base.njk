@@ -1,0 +1,42 @@
+{% set is_home = page.url == "/" %}
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>{{ title }}{% if not is_home %} | Pride Flags{% endif %}</title>
+
+		<script type="module" src="/assets/js/main.js"></script>
+		<link rel="stylesheet" href="/assets/css/main.css">
+
+		<meta name="description" content="Filter pride flags based on colors and patterns.">
+		<meta name="generator" content="{{ eleventy.generator }}" />
+
+		<link rel="icon" href="/favicon.ico" sizes="32x32">
+		<link rel="icon" href="/icons/icon.svg" type="image/svg+xml">
+		<link rel="apple-touch-icon" href="/icons/apple-touch-icon.png">
+		<link rel="manifest" href="/manifest.webmanifest">
+
+		<meta property="og:site_name" content="Pride Flags">
+		<meta property="og:type" content="website">
+		<meta property="og:url" content="{{ base }}{{ page.url }}">
+		<meta property="og:title" content="{{ title }}">
+		<meta property="og:locale" content="en">
+		<meta property="og:image" content="{{ base }}/assets/img/social.png">
+		<meta property="og:image:alt" content="Rainbow pride flag">
+	</head>
+	<body>
+		<main class="u-container">
+			{% if not is_home %}
+				<a class="u-inline-block u-mbe-16" href="/">← Back</a>
+			{% endif %}
+
+			<h1 class="u-mbe-32">{{ title }}</h1>
+
+			{{ content|safe }}
+		</main>
+
+		{% include "footer.njk" %}
+	</body>
+</html>

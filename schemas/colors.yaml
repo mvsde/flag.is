@@ -1,0 +1,15 @@
+$schema: https://json-schema.org/draft/2020-12/schema
+$id: colors
+type: object
+patternProperties:
+  .:
+    type: object
+    required:
+      - name
+      - swatch
+    additionalProperties: false
+    properties:
+      name:
+        type: string
+      swatch:
+        type: string

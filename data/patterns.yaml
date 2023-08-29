@@ -1,0 +1,12 @@
+chevron:
+  name: Chevron
+solid:
+  name: Solid
+stripes_diagonal:
+  name: Stripes <small>Diagonal</small>
+stripes_horizontal:
+  name: Stripes <small>Horizontal</small>
+stripes_vertical:
+  name: Stripes <small>Vertical</small>
+symbol:
+  name: Symbol

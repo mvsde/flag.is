@@ -1,0 +1,83 @@
+{% import "input.njk" as input %}
+{% from "swatch.njk" import swatch %}
+
+<div class="js-Search">
+	<form class="u-mbe-32 js-Search-form">
+		<header class="Search-formHeader u-mbe-16">
+			<h2>Filters</h2>
+
+			<button type="reset">
+				Clear filters
+			</button>
+		</header>
+
+		<div class="u-mbe-16">
+			{{ input.text(
+				label = "Name",
+				id = "name",
+				name = "name"
+			) }}
+		</div>
+
+		<fieldset class="u-mbe-16">
+			<legend>Colors</legend>
+
+			<div class="Fieldset-columns">
+				{% for id, color in colors %}
+					{{ input.checkbox(
+						label = swatch(color.swatch) ~ color.name,
+						id = "color-" ~ id,
+						name = "colors",
+						value = id
+					) }}
+				{% endfor %}
+			</div>
+		</fieldset>
+
+		<fieldset>
+			<legend>Patterns</legend>
+
+			<div class="Fieldset-columns">
+				{% for id, pattern in patterns %}
+					{{ input.checkbox(
+						label = pattern.name,
+						id = "pattern-" ~ id,
+						name = "patterns",
+						value = id
+					) }}
+				{% endfor %}
+			</div>
+		</fieldset>
+	</form>
+
+	<h2 class="u-mbe-16">Flags</h2>
+
+	<ul class="Search-list">
+		{% for id, flag in flags %}
+			<li
+				class="Search-item js-Search-item"
+				data-name="{{ flag.name }}"
+				data-aliases="{{ flag.aliases }}"
+				data-colors="{{ flag.colors }}"
+				data-patterns="{{ flag.patterns }}"
+			>
+				<p class="Search-itemName">
+					<a href="/flags/{{ id }}/">{{ flag.name }}</a>
+					{% if flag.aliases %}
+						<small>{{ flag.aliases|join(", ") }}</small>
+					{% endif %}
+				</p>
+
+				{% set width = 131 %}
+				<img
+					class="Search-itemFlag"
+					src="/assets/img/flags/{{ id }}.svg"
+					alt="{{ flag.name }} flag"
+					width="{{ width }}"
+					height="{{ (width / flag.aspect_ratio)|round }}"
+					loading="lazy"
+				>
+			</li>
+		{% endfor %}
+	</ul>
+</div>

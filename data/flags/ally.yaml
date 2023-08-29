@@ -1,0 +1,20 @@
+name: Ally
+aliases:
+  - Straight ally
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Straight_ally
+aspect_ratio: 1.5
+colors:
+  - red
+  - orange
+  - yellow
+  - green
+  - blue
+  - purple
+  - black
+  - white
+patterns:
+  - chevron
+  - stripes_horizontal
+  - symbol

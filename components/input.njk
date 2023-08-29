@@ -1,0 +1,26 @@
+{% macro text(label, id, name, value = "") %}
+	<div class="Input Input--text">
+		<label for="{{ id }}">
+			{{ label }}
+		</label>
+		<input
+			id="{{ id }}"
+			name="{{ name }}"
+			value="{{ value }}"
+		>
+	</div>
+{% endmacro %}
+
+{% macro checkbox(label, id, name, value) %}
+	<div class="Input Input--checkbox">
+		<input
+			type="checkbox"
+			id="{{ id }}"
+			name="{{ name }}"
+			value="{{ value }}"
+		>
+		<label for="{{ id }}">
+			{{ label|safe }}
+		</label>
+	</div>
+{% endmacro %}

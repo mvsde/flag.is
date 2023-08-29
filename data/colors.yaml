@@ -1,0 +1,33 @@
+black:
+  name: Black
+  swatch: hsl(0deg 0% 0%)
+gray:
+  name: Gray
+  swatch: hsl(0deg 0% 60%)
+white:
+  name: White
+  swatch: hsl(0deg 0% 100%)
+red:
+  name: Red
+  swatch: hsl(0deg 100% 45%)
+orange:
+  name: Orange
+  swatch: hsl(33deg 100% 50%)
+yellow:
+  name: Yellow
+  swatch: hsl(51deg 100% 50%)
+green:
+  name: Green
+  swatch: hsl(123deg 46% 44%)
+blue:
+  name: Blue
+  swatch: hsl(201deg 100% 56%)
+pink:
+  name: Pink
+  swatch: hsl(331deg 100% 56%)
+purple:
+  name: Purple
+  swatch: hsl(283deg 98% 34%)
+brown:
+  name: Brown
+  swatch: hsl(33deg 92% 20%)

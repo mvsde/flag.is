@@ -1,0 +1,12 @@
+name: Bigender
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Bigender
+aspect_ratio: 1.66667
+colors:
+  - pink
+  - gray
+  - white
+  - blue
+patterns:
+  - stripes_horizontal

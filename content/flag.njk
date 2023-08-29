@@ -1,0 +1,78 @@
+---
+pagination:
+  data: flags
+  size: 1
+  alias: id
+permalink: "flags/{{ id }}/index.html"
+eleventyComputed:
+  title: "{{ flags[id].name }}"
+---
+
+{% set flag = flags[id] %}
+
+{% if flag.aliases %}
+  <p class="u-mbe-32">{{ flag.aliases|join(", ") }}</p>
+{% endif %}
+
+<section class="u-mbe-32">
+  <h2 class="u-mbe-16">Flag</h2>
+
+  {% set width = 300 %}
+  <img
+    src="/assets/img/flags/{{ id }}.svg"
+    alt="{{ flag.name }} flag"
+    width="{{ width }}"
+    height="{{ (width / flag.aspect_ratio)|round }}"
+  >
+</section>
+
+{% if flag.links %}
+  <section class="u-mbe-32">
+    <h2 class="u-mbe-16">Links</h2>
+
+    <ul>
+      {% for link in flag.links %}
+        <li>
+          <a href="{{ link.href }}">{{ link.title }}</a>
+        </li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+{% if flag.colors %}
+  <section class="u-mbe-32">
+    <h2 class="u-mbe-16">Colors</h2>
+
+    <ul>
+      {% for color in flag.colors %}
+        <li>{{ colors[color].name }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+{% if flag.patterns %}
+  <section class="u-mbe-32">
+    <h2 class="u-mbe-16">Patterns</h2>
+
+    <ul>
+      {% for pattern in flag.patterns %}
+        <li>{{ patterns[pattern].name|safe }}</li>
+      {% endfor %}
+    </ul>
+  </section>
+{% endif %}
+
+<section>
+  <h2 class="u-mbe-16">Edit</h2>
+
+  <ul>
+    <li>
+      <a href="{{ config.repository }}/edit/main/data/flags/{{ id }}.yaml">Edit metadata</a>
+    </li>
+    <li>
+      <a href="{{ config.repository }}/edit/main/assets/img/flags/{{ id }}.svg">Edit flag</a>
+    </li>
+  </ul>
+</section>

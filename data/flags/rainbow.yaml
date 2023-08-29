@@ -1,0 +1,14 @@
+name: Rainbow
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
+aspect_ratio: 1.61875
+colors:
+  - red
+  - orange
+  - yellow
+  - green
+  - blue
+  - purple
+patterns:
+  - stripes_horizontal

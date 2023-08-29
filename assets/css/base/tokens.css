@@ -1,0 +1,8 @@
+:root {
+	--color-background: hsl(200deg 30% 95%);
+
+	--border-divider: 0.0625rem solid hsl(200deg 30% 80%);
+	--border-interactive: 0.0625rem solid hsl(200deg 30% 40%);
+
+	--border-radius: 0.25rem;
+}

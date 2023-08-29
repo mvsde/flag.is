@@ -1,0 +1,26 @@
+{
+	"name": "@mvsde/pride-flags",
+	"license": "ACSL",
+	"private": true,
+	"type": "module",
+	"scripts": {
+		"dev:site": "URL=http://localhost:8080 eleventy --incremental --serve",
+		"build:site": "URL=$URL eleventy",
+		"lint:css": "stylelint --ignore-path .gitignore **/*.css",
+		"lint:js": "eslint ."
+	},
+	"devDependencies": {
+		"@11ty/eleventy": "^2.0.1",
+		"@eslint/js": "^8.48.0",
+		"eslint": "^8.48.0",
+		"eslint-config-prettier": "^9.0.0",
+		"eslint-plugin-n": "^16.0.2",
+		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"globals": "^13.21.0",
+		"prettier": "^3.0.3",
+		"stylelint": "^15.10.3",
+		"stylelint-config-standard": "^34.0.0",
+		"stylelint-order": "^6.0.3",
+		"yaml": "^2.3.2"
+	}
+}

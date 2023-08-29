@@ -1,0 +1,49 @@
+* {
+	box-sizing: border-box;
+	margin: 0;
+	padding: 0;
+}
+
+html {
+	font-family: system-ui, sans-serif;
+}
+
+body {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	min-block-size: 100dvb;
+}
+
+main {
+	padding-block: 1rem 2rem;
+}
+
+input,
+button {
+	font: inherit;
+}
+
+button,
+label,
+[type="checkbox"] {
+	cursor: pointer;
+}
+
+button {
+	border: var(--border-interactive);
+	border-radius: var(--border-radius);
+	padding-block: 0.75rem;
+	padding-inline: 1rem;
+}
+
+ul:not([class]) {
+	padding-inline-start: 1rem;
+}
+
+img {
+	block-size: auto;
+	border-radius: var(--border-radius);
+	max-inline-size: 100%;
+	vertical-align: middle;
+}

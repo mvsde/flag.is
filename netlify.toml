@@ -1,0 +1,33 @@
+# Build
+
+[build]
+  command = "npm run build:site"
+  publish = "build"
+
+[build.environment]
+  NODE_VERSION = "20"
+
+# Redirects
+
+## pride-flags.netlify.app
+
+[[redirects]]
+  from = "https://pride-flags.netlify.app/*"
+  to = "https://pride-flags.fynn.be/:splat"
+  status = 302
+  force = true
+
+## prideflags.fynn.be
+
+[[redirects]]
+  from = "https://prideflags.fynn.be/*"
+  to = "https://pride-flags.fynn.be/:splat"
+  status = 302
+  force = true
+
+## 404
+
+[[redirects]]
+  from = "/*"
+  to = "/404.html"
+  status = 404

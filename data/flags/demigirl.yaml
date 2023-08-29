@@ -1,0 +1,14 @@
+name: Demigirl
+aliases:
+  - Demiwoman
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Demigirl
+aspect_ratio: 1.42857
+colors:
+  - black
+  - gray
+  - pink
+  - white
+patterns:
+  - stripes_horizontal

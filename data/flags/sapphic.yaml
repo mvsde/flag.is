@@ -1,0 +1,15 @@
+name: Sapphic
+aliases:
+  - WLW
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Sapphism
+aspect_ratio: 1.66667
+colors:
+  - purple
+  - yellow
+  - pink
+  - white
+patterns:
+  - stripes_horizontal
+  - symbol

@@ -1,0 +1,21 @@
+name: Progress pride
+aliases:
+  - New progress pride
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
+aspect_ratio: 1.5748
+colors:
+  - yellow
+  - purple
+  - white
+  - pink
+  - blue
+  - brown
+  - black
+  - red
+  - orange
+patterns:
+  - chevron
+  - stripes_horizontal
+  - symbol

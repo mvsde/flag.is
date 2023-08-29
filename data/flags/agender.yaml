@@ -1,0 +1,12 @@
+name: Agender
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Agender
+aspect_ratio: 1.42857
+colors:
+  - black
+  - gray
+  - white
+  - green
+patterns:
+  - stripes_horizontal

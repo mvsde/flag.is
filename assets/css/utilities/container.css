@@ -1,0 +1,6 @@
+.u-container {
+	inline-size: 100%;
+	margin-inline: auto;
+	max-inline-size: 80rem;
+	padding-inline: 1rem;
+}

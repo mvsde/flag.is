@@ -1,0 +1,14 @@
+name: Gender non-conforming
+aliases:
+  - GNC
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Gender_non-conforming
+aspect_ratio: 1.66667
+colors:
+  - purple
+  - pink
+  - black
+  - white
+patterns:
+  - stripes_horizontal
