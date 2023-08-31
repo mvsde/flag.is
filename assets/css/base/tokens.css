@@ -1,8 +1,24 @@
 :root {
-	--color-background: hsl(200deg 30% 95%);
-
-	--border-divider: 0.0625rem solid hsl(200deg 30% 80%);
-	--border-interactive: 0.0625rem solid hsl(200deg 30% 40%);
+	--border-divider: 0.0625rem solid var(--color-border-divider);
+	--border-interactive: 0.0625rem solid var(--color-border-interactive);
 
 	--border-radius: 0.25rem;
+
+	color-scheme: light dark;
+}
+
+@media (prefers-color-scheme: light) {
+	:root {
+		--color-background: hsl(200deg 30% 95%);
+		--color-border-divider: hsl(200deg 30% 80%);
+		--color-border-interactive: hsl(200deg 30% 40%);
+	}
+}
+
+@media (prefers-color-scheme: dark) {
+	:root {
+		--color-background: hsl(200deg 30% 15%);
+		--color-border-divider: hsl(200deg 30% 25%);
+		--color-border-interactive: hsl(200deg 30% 30%);
+	}
 }
