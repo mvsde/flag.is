@@ -4,10 +4,12 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev:site": "URL=http://localhost:8080 eleventy --incremental --serve",
-		"build:site": "URL=$URL eleventy",
+		"dev": "URL=http://localhost:8080 eleventy --incremental --serve",
+		"build": "URL=$URL eleventy",
+		"format": "prettier --write .",
 		"lint:css": "stylelint --ignore-path .gitignore **/*.css",
-		"lint:js": "eslint ."
+		"lint:js": "eslint .",
+		"lint:format": "prettier --check ."
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",

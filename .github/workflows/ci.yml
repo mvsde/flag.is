@@ -19,3 +19,5 @@ jobs:
         run: npm run lint:css
       - name: Lint JS
         run: npm run lint:js
+      - name: Lint format
+        run: npm run lint:format

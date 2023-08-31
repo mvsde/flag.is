@@ -23,7 +23,13 @@ npm install
 ### Development
 
 ```sh
-npm run dev:site
+npm run dev
+```
+
+### Formatting
+
+```sh
+npm run format
 ```
 
 ### Linting
@@ -31,12 +37,13 @@ npm run dev:site
 ```sh
 npm run lint:css
 npm run lint:js
+npm run lint:format
 ```
 
 ### Production
 
 ```sh
-npm run build:site
+npm run build
 ```
 
 ## License
