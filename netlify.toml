@@ -1,7 +1,7 @@
 # Build
 
 [build]
-  command = "npm run build:site"
+  command = "npm run build"
   publish = "build"
 
 [build.environment]
