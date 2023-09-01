@@ -1,0 +1,13 @@
+name: Drag
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Drag_(entertainment)
+aspect_ratio: 1.5
+colors:
+  - pink
+  - purple
+  - white
+  - blue
+patterns:
+  - symbol
+  - stripes_vertical
