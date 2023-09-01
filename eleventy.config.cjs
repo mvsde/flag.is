@@ -29,3 +29,5 @@ module.exports = function (eleventyConfig) {
 		markdownTemplateEngine: "njk",
 	};
 };
+
+module.exports.DIRECTORIES = DIRECTORIES;

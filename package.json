@@ -4,8 +4,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "URL=http://localhost:8080 eleventy --incremental --serve",
-		"build": "URL=$URL eleventy",
+		"dev": "NODE_ENV=development URL=http://localhost:8080 eleventy --incremental --serve",
+		"build": "NODE_ENV=production URL=$URL eleventy",
 		"format": "prettier --write .",
 		"lint:css": "stylelint --ignore-path .gitignore **/*.css",
 		"lint:js": "eslint .",
@@ -20,6 +20,7 @@
 		"eslint-plugin-simple-import-sort": "^10.0.0",
 		"globals": "^13.21.0",
 		"prettier": "^3.0.3",
+		"sharp": "^0.32.5",
 		"stylelint": "^15.10.3",
 		"stylelint-config-standard": "^34.0.0",
 		"stylelint-order": "^6.0.3",
