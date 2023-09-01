@@ -19,7 +19,7 @@ eleventyComputed:
 
   {% set width = 300 %}
   <img
-    src="/assets/img/flags/{{ id }}.svg"
+    src="/img/flags/{{ id }}.svg"
     alt="{{ flag.name }} flag"
     width="{{ width }}"
     height="{{ (width / flag.aspect_ratio)|round }}"
@@ -72,7 +72,7 @@ eleventyComputed:
       <a href="{{ config.repository }}/edit/main/data/flags/{{ id }}.yaml">Edit metadata</a>
     </li>
     <li>
-      <a href="{{ config.repository }}/edit/main/assets/img/flags/{{ id }}.svg">Edit flag</a>
+      <a href="{{ config.repository }}/edit/main/data/flags/{{ id }}.svg">Edit flag</a>
     </li>
   </ul>
 </section>

@@ -38,7 +38,7 @@ export default [
 	},
 
 	{
-		files: ["assets/**/*.js"],
+		files: ["public/**/*.js"],
 		languageOptions: {
 			globals: {
 				...globals.browser,

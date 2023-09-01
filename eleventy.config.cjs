@@ -16,8 +16,8 @@ const DIRECTORIES = {
  */
 module.exports = function (eleventyConfig) {
 	// Copy
-	eleventyConfig.addPassthroughCopy("assets");
 	eleventyConfig.addPassthroughCopy({ public: "/" });
+	eleventyConfig.addPassthroughCopy({ "data/flags/*.svg": "img/flags" });
 
 	// Data
 	eleventyConfig.addDataExtension("yaml", (content) => yaml.parse(content));
