@@ -2,10 +2,10 @@ const yaml = require("yaml");
 
 const DIRECTORIES = {
 	// Relative to current directory.
-	input: "content",
+	input: "pages",
 	output: "build",
 
-	// Relative to `content` directory.
+	// Relative to "input" directory.
 	layouts: "../layouts",
 	includes: "../components",
 	data: "../data",
