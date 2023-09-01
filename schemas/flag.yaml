@@ -52,6 +52,7 @@ properties:
       uniqueItems: true
       enum:
         - chevron
+        - lettering
         - solid
         - stripes_diagonal
         - stripes_horizontal
