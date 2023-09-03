@@ -17,6 +17,7 @@ const DIRECTORIES = {
  */
 module.exports = function (eleventyConfig) {
 	// Copy
+	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 	eleventyConfig.addPassthroughCopy({ public: "/" });
 	eleventyConfig.addPassthroughCopy({ "data/flags/*.svg": "img" });
 
