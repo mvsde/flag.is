@@ -2,3 +2,7 @@
 	background: var(--color-background);
 	padding-block: 2rem;
 }
+
+.Footer a {
+	color: currentcolor;
+}

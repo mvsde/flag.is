@@ -3,7 +3,7 @@
 
 <div class="js-Search">
 	<form class="u-mbe-32 js-Search-form">
-		<header class="Search-formHeader u-mbe-16">
+		<header class="Search-formHeader u-mbe-32">
 			<h2>Filters</h2>
 
 			<button type="reset">
@@ -50,7 +50,7 @@
 		</fieldset>
 	</form>
 
-	<h2 class="u-mbe-16">Flags</h2>
+	<h2 class="u-mbe-32">Flags</h2>
 
 	<ul class="Search-list">
 		{% for id, flag in flags %}
@@ -61,8 +61,6 @@
 				data-colors="{{ flag.colors }}"
 				data-patterns="{{ flag.patterns }}"
 			>
-				<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
-
 				{% set width = 131 %}
 				<img
 					class="Search-itemFlag"
@@ -72,6 +70,8 @@
 					height="{{ (width / flag.aspect_ratio)|round }}"
 					loading="lazy"
 				>
+
+				<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
 			</li>
 		{% endfor %}
 	</ul>

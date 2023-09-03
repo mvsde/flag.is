@@ -16,16 +16,20 @@
 	border-radius: var(--border-radius);
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 }
 
 .Search-itemLink {
+	align-items: end;
+	border-block-start: var(--border-divider);
+	color: inherit;
+	display: flex;
+	flex-grow: 1;
 	padding: 1rem;
-	z-index: 1;
+	z-index: currentcolor;
 }
 
 .Search-itemFlag {
-	border-end-end-radius: calc(var(--border-radius) * 0.8);
-	border-end-start-radius: calc(var(--border-radius) * 0.8);
+	border-start-end-radius: calc(var(--border-radius) * 0.8);
+	border-start-start-radius: calc(var(--border-radius) * 0.8);
 	inline-size: 100%;
 }
