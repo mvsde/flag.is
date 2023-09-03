@@ -6,27 +6,26 @@
 
 .Search-list {
 	display: grid;
-	gap: 1rem;
+	gap: 2rem;
 	grid-template-columns: repeat(auto-fill, minmax(10rem, 1fr));
 	list-style: none;
 }
 
 .Search-item {
-	align-content: space-between;
 	border: var(--border-divider);
 	border-radius: var(--border-radius);
-	display: grid;
-	gap: 0.5rem;
-	padding: 1rem;
-}
-
-.Search-itemName {
 	display: flex;
 	flex-direction: column;
-	gap: 0.5rem;
+	justify-content: space-between;
+}
+
+.Search-itemLink {
+	padding: 1rem;
+	z-index: 1;
 }
 
 .Search-itemFlag {
+	border-end-end-radius: calc(var(--border-radius) * 0.8);
+	border-end-start-radius: calc(var(--border-radius) * 0.8);
 	inline-size: 100%;
-	margin-block-start: auto;
 }

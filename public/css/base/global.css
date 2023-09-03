@@ -43,7 +43,6 @@ ul:not([class]) {
 
 img {
 	block-size: auto;
-	border-radius: var(--border-radius);
 	max-inline-size: 100%;
 	vertical-align: middle;
 }
