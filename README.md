@@ -51,3 +51,7 @@ npm run build
 ## License
 
 [Anti-Capitalist Software License](https://anticapitalist.software/)
+
+## Credits
+
+- [Feather](https://feathericons.com)
