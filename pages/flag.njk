@@ -9,7 +9,7 @@
 
 	{% set width = 300 %}
 	<img
-		src="/img/flags/{{ id }}.svg"
+		src="/img/{{ id }}.svg"
 		alt="{{ flag.name }} flag"
 		width="{{ width }}"
 		height="{{ (width / flag.aspect_ratio)|round }}"

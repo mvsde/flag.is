@@ -1,5 +1,3 @@
-const image = import("../image.js");
-
 module.exports = {
 	pagination: {
 		data: "flags",
@@ -10,9 +8,9 @@ module.exports = {
 	eleventyComputed: {
 		title: (data) => data.flags[data.id].name,
 		social: {
-			image: async (data) =>
-				(await image).createSocialShareFlag(`data/flags/${data.id}.svg`),
+			image: (data) => `data/flags/${data.id}.svg`,
 			image_alt: (data) => `${data.flags[data.id].name} flag`,
+			image_preset: "flag",
 		},
 	},
 };

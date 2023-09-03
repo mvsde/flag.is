@@ -7,17 +7,30 @@ import sharp from "sharp";
 
 import { DIRECTORIES } from "./eleventy.config.cjs";
 
+/**
+ * @param {string} inputPath
+ * @param {"flag"} [preset]
+ */
+export async function generateImage(inputPath, preset) {
+	if (preset === "flag") {
+		return createFlag(inputPath);
+	}
+
+	return inputPath;
+}
+
 /** @type {Map<string, sharp.Sharp>} */
-const cache = new Map();
+const flagCache = new Map();
 
 /**
  * @param {string} inputPath Input path
  * @returns {Promise<string>} Output path
  */
-export async function createSocialShareFlag(inputPath) {
-	const name = path.basename(inputPath, path.extname(inputPath));
-	const outputDir = "img/social";
-	const outputPath = `${outputDir}/${name}.png`;
+async function createFlag(inputPath) {
+	const id = path.basename(inputPath, path.extname(inputPath));
+
+	const outputURL = `img/${id}.social.png`;
+	const outputPath = `${DIRECTORIES.output}/${outputURL}`;
 
 	const width = 1200;
 	const height = 630;
@@ -25,10 +38,12 @@ export async function createSocialShareFlag(inputPath) {
 	const file = await fs.readFile(inputPath);
 	const hash = crypto.createHash("sha256").update(file).digest("hex");
 
-	let image = cache.get(hash);
+	let image = flagCache.get(hash);
 
 	// Create new image if cache is empty
 	if (!image) {
+		console.log(`[img] Creating ${outputPath} from ${inputPath}`);
+
 		const flag = sharp(file).resize({
 			width: width * 0.7,
 			height: height * 0.7,
@@ -53,12 +68,12 @@ export async function createSocialShareFlag(inputPath) {
 			{ input: await flag.toBuffer() },
 		]);
 
-		cache.set(hash, image);
+		flagCache.set(hash, image);
 	}
 
 	// Write image file
-	await fs.mkdir(`${DIRECTORIES.output}/${outputDir}`, { recursive: true });
-	await image.toFile(`${DIRECTORIES.output}/${outputPath}`);
+	await fs.mkdir(path.dirname(outputPath), { recursive: true });
+	await image.toFile(outputPath);
 
-	return outputPath;
+	return outputURL;
 }

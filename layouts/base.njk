@@ -23,8 +23,11 @@
 		<meta property="og:url" content="{{ base }}{{ page.url }}">
 		<meta property="og:title" content="{{ title }}">
 		<meta property="og:locale" content="en">
-		<meta property="og:image" content="{{ base }}/{{ social.image or 'img/social.png' }}">
-		<meta property="og:image:alt" content="{{ social.image_alt or 'Rainbow flag' }}">
+
+		{% if social.image %}
+			<meta property="og:image" content="{{ base }}/{% image social.image, social.image_preset %}">
+			<meta property="og:image:alt" content="{{ social.image_alt }}">
+		{% endif %}
 	</head>
 	<body>
 		<main class="u-container">
