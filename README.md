@@ -1,8 +1,6 @@
 # Pride Flags
 
-A website to filter pride flags based on colors and patterns.
-
-Most pride flags are sourced from Wikipedia.
+A website to filter pride flags based on colors and patterns, available at [flag.is](https://flag.is).
 
 ## Stack
 

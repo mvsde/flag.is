@@ -13,17 +13,24 @@
 
 [[redirects]]
   from = "https://pride-flags.netlify.app/*"
-  to = "https://pride-flags.fynn.be/:splat"
+  to = "https://flag.is/:splat"
   status = 302
   force = true
 
-## prideflags.fynn.be
+## pride-flags.fynn.be
 
 [[redirects]]
-  from = "https://prideflags.fynn.be/*"
-  to = "https://pride-flags.fynn.be/:splat"
+  from = "https://pride-flags.fynn.be/*"
+  to = "https://flag.is/:splat"
   status = 302
   force = true
+
+## Page redirects
+
+[[redirects]]
+	from = "/flags/*"
+	to = "/:splat"
+	status = 301
 
 ## 404
 

@@ -4,7 +4,7 @@ module.exports = {
 		size: 1,
 		alias: "id",
 	},
-	permalink: (data) => `flags/${data.id}/index.html`,
+	permalink: (data) => `${data.id}/index.html`,
 	eleventyComputed: {
 		title: (data) => data.flags[data.id].name,
 		social: {

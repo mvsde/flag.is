@@ -62,7 +62,7 @@
 				data-patterns="{{ flag.patterns }}"
 			>
 				<p class="Search-itemName">
-					<a href="/flags/{{ id }}/">{{ flag.name }}</a>
+					<a href="/{{ id }}/">{{ flag.name }}</a>
 					{% if flag.aliases %}
 						<small>{{ flag.aliases|join(", ") }}</small>
 					{% endif %}
