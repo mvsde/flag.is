@@ -10,7 +10,10 @@
 		<script type="module" src="/js/main.js"></script>
 		<link rel="stylesheet" href="/css/main.css">
 
-		<meta name="description" content="Filter pride flags based on colors and patterns.">
+		{% if description %}
+			<meta name="description" content="{{ description }}">
+		{% endif %}
+
 		<meta name="generator" content="{{ eleventy.generator }}">
 
 		<link rel="icon" href="/favicon.ico" sizes="32x32">
