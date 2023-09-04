@@ -1,4 +1,4 @@
-# Pride Flags
+# flag.is
 
 A website to filter pride flags based on colors and patterns, available at [flag.is](https://flag.is).
 
@@ -54,4 +54,4 @@ npm run build
 
 ## Credits
 
-- [Feather](https://feathericons.com)
+- Icons: [Feather](https://feathericons.com)
