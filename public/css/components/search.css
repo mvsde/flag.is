@@ -50,3 +50,15 @@
 	border-start-start-radius: calc(var(--border-radius) * 0.8);
 	inline-size: 100%;
 }
+
+@supports selector(:has(a)) {
+	.Search-list:has(> :not([hidden])) + .Search-noResult {
+		display: none;
+	}
+}
+
+@supports not selector(:has(a)) {
+	.Search-noResult {
+		display: none;
+	}
+}

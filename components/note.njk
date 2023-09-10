@@ -1,5 +1,5 @@
-{% macro warning(text) %}
-	<p class="Note Note--warning">
+{% macro warning(classes = [], text) %}
+	<p class="Note Note--warning {{ classes|join(" ") }}">
 		{{ text }}
 	</p>
 {% endmacro %}
