@@ -32,6 +32,7 @@
 
 .Input--checkbox label {
 	align-items: center;
+	border-radius: var(--border-radius);
 	display: flex;
 	flex-grow: 1;
 	gap: 0.5rem;
@@ -50,6 +51,11 @@
 	inline-size: var(--size);
 	line-height: 0.8;
 	text-align: center;
+}
+
+.Input--checkbox input:focus-visible + label {
+	outline: var(--outline-focus);
+	outline-offset: 0.25rem;
 }
 
 .Input--checkbox input:checked + label::before {

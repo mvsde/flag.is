@@ -38,6 +38,10 @@ button {
 	padding-inline: 1rem;
 }
 
+a {
+	color: currentcolor;
+}
+
 ul:not([class]) {
 	padding-inline-start: 1rem;
 }
@@ -46,4 +50,10 @@ img {
 	block-size: auto;
 	max-inline-size: 100%;
 	vertical-align: middle;
+}
+
+:focus-visible {
+	border-radius: var(--border-radius);
+	outline: var(--outline-focus);
+	outline-offset: 0.125rem;
 }

@@ -39,11 +39,10 @@
 .Search-itemLink {
 	align-items: end;
 	border-block-start: var(--border-divider);
-	color: inherit;
 	display: flex;
 	flex-grow: 1;
+	outline-offset: 0;
 	padding: 1rem;
-	z-index: currentcolor;
 }
 
 .Search-itemFlag {
