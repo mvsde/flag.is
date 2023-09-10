@@ -1,25 +1,17 @@
 {% import "input.njk" as input %}
 {% from "swatch.njk" import swatch %}
 
-<div class="js-Search">
-	<form class="u-mbe-32 js-Search-form">
-		<header class="Search-formHeader u-mbe-32">
-			<h2>Filters</h2>
+<div class="Search js-Search">
+	<form class="Search-form js-Search-form">
+		<h2>Filters</h2>
 
-			<button type="reset">
-				Clear filters
-			</button>
-		</header>
+		{{ input.text(
+			label = "Name",
+			id = "name",
+			name = "name"
+		) }}
 
-		<div class="u-mbe-16">
-			{{ input.text(
-				label = "Name",
-				id = "name",
-				name = "name"
-			) }}
-		</div>
-
-		<fieldset class="u-mbe-16">
+		<fieldset>
 			<legend>Colors</legend>
 
 			<div class="Fieldset-columns">
@@ -48,31 +40,37 @@
 				{% endfor %}
 			</div>
 		</fieldset>
+
+		<button type="reset">
+			Clear filters
+		</button>
 	</form>
 
-	<h2 class="u-mbe-32">Flags</h2>
+	<div class="Search-flags">
+		<h2>Flags</h2>
 
-	<ul class="Search-list">
-		{% for id, flag in flags %}
-			<li
-				class="Search-item js-Search-item"
-				data-name="{{ flag.name }}"
-				data-aliases="{{ flag.aliases }}"
-				data-colors="{{ flag.colors }}"
-				data-patterns="{{ flag.patterns }}"
-			>
-				{% set width = 131 %}
-				<img
-					class="Search-itemFlag"
-					src="/img/{{ id }}.svg"
-					alt="{{ flag.name }} flag"
-					width="{{ width }}"
-					height="{{ (width / flag.aspect_ratio)|round }}"
-					loading="lazy"
+		<ul class="Search-list">
+			{% for id, flag in flags %}
+				<li
+					class="Search-item js-Search-item"
+					data-name="{{ flag.name }}"
+					data-aliases="{{ flag.aliases }}"
+					data-colors="{{ flag.colors }}"
+					data-patterns="{{ flag.patterns }}"
 				>
+					{% set width = 131 %}
+					<img
+						class="Search-itemFlag"
+						src="/img/{{ id }}.svg"
+						alt="{{ flag.name }} flag"
+						width="{{ width }}"
+						height="{{ (width / flag.aspect_ratio)|round }}"
+						loading="lazy"
+					>
 
-				<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
-			</li>
-		{% endfor %}
-	</ul>
+					<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
+				</li>
+			{% endfor %}
+		</ul>
+	</div>
 </div>

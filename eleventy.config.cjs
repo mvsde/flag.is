@@ -23,7 +23,7 @@ module.exports = function (eleventyConfig) {
 
 	// Data
 	eleventyConfig.addDataExtension("yaml", (content) => yaml.parse(content));
-	eleventyConfig.addGlobalData("layout", "base.njk");
+	eleventyConfig.addGlobalData("layout", "default.njk");
 	eleventyConfig.addGlobalData("base", process.env.URL);
 
 	// Shortcodes

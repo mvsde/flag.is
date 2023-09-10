@@ -1,4 +1,5 @@
 module.exports = {
+	layout: "rich-text.njk",
 	pagination: {
 		data: "flags",
 		size: 1,

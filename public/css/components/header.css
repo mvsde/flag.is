@@ -1,0 +1,8 @@
+.Header {
+	background: var(--color-background);
+	padding-block: 1rem;
+}
+
+.Header a {
+	color: currentcolor;
+}

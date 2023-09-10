@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>{{ title }}{% if not is_home %} | flag.is{% endif %}</title>
+		<title>{% if not is_home %}{{ title }} | {% endif %}flag.is</title>
 
 		<script type="module" src="/js/main.js"></script>
 		<link rel="stylesheet" href="/css/main.css">
@@ -34,14 +34,14 @@
 		{% endif %}
 	</head>
 	<body>
+		{% include "header.njk" %}
+
 		<main class="u-container">
-			{% if not is_home %}
-				<a class="u-inline-block u-mbe-16 js-Back" href="/">← Back</a>
+			{% if title %}
+				<h1>{{ title }}</h1>
 			{% endif %}
 
-			<h1 class="u-mbe-32">{{ title }}</h1>
-
-			{{ content|safe }}
+			{% block content %}{% endblock %}
 		</main>
 
 		{% include "footer.njk" %}

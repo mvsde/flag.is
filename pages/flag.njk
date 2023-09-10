@@ -1,11 +1,11 @@
 {% set flag = flags[id] %}
 
 {% if flag.aliases %}
-	<p class="u-mbe-32">{{ flag.aliases|join(", ") }}</p>
+	<p>{{ flag.aliases|join(", ") }}</p>
 {% endif %}
 
-<section class="u-mbe-32">
-	<h2 class="u-mbe-16">Flag</h2>
+<section>
+	<h2>Flag</h2>
 
 	{% set width = 300 %}
 	<img
@@ -17,8 +17,8 @@
 </section>
 
 {% if flag.links %}
-	<section class="u-mbe-32">
-		<h2 class="u-mbe-16">Links</h2>
+	<section>
+		<h2>Links</h2>
 
 		<ul>
 			{% for link in flag.links %}
@@ -31,8 +31,8 @@
 {% endif %}
 
 {% if flag.colors %}
-	<section class="u-mbe-32">
-		<h2 class="u-mbe-16">Colors</h2>
+	<section>
+		<h2>Colors</h2>
 
 		<ul>
 			{% for color in flag.colors %}
@@ -43,8 +43,8 @@
 {% endif %}
 
 {% if flag.patterns %}
-	<section class="u-mbe-32">
-		<h2 class="u-mbe-16">Patterns</h2>
+	<section>
+		<h2>Patterns</h2>
 
 		<ul>
 			{% for pattern in flag.patterns %}
@@ -55,7 +55,7 @@
 {% endif %}
 
 <section>
-	<h2 class="u-mbe-16">Edit</h2>
+	<h2>Edit</h2>
 
 	<ul>
 		<li>

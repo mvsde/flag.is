@@ -11,11 +11,11 @@ html {
 body {
 	display: flex;
 	flex-direction: column;
-	justify-content: space-between;
 	min-block-size: 100dvb;
 }
 
 main {
+	margin-block-end: auto;
 	padding-block: 2rem 3rem;
 }
 

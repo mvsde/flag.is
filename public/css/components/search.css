@@ -1,7 +1,25 @@
-.Search-formHeader {
-	align-items: center;
-	display: flex;
-	justify-content: space-between;
+.Search {
+	display: grid;
+}
+
+@media (width < 52rem) {
+	.Search {
+		gap: 2rem;
+	}
+}
+
+@media (52rem <= width) {
+	.Search {
+		gap: 3rem;
+		grid-template-columns: 1fr 3fr;
+	}
+}
+
+.Search-form,
+.Search-flags {
+	align-content: start;
+	display: grid;
+	gap: 1rem;
 }
 
 .Search-list {

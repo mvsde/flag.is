@@ -1,3 +1,7 @@
+.Input {
+	min-inline-size: 0;
+}
+
 .Input label small {
 	display: block;
 }
