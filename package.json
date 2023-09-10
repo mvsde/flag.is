@@ -14,8 +14,8 @@
 	},
 	"devDependencies": {
 		"@11ty/eleventy": "^2.0.1",
-		"@eslint/js": "^8.48.0",
-		"eslint": "^8.48.0",
+		"@eslint/js": "^8.49.0",
+		"eslint": "^8.49.0",
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-n": "^16.0.2",
 		"eslint-plugin-simple-import-sort": "^10.0.0",
