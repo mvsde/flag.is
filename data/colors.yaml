@@ -1,33 +1,44 @@
 black:
   name: Black
   swatch: hsl(0deg 0% 0%)
+  on_swatch: white
 gray:
   name: Gray
   swatch: hsl(0deg 0% 60%)
+  on_swatch: white
 white:
   name: White
   swatch: hsl(0deg 0% 100%)
+  on_swatch: black
 red:
   name: Red
   swatch: hsl(0deg 100% 45%)
+  on_swatch: white
 orange:
   name: Orange
   swatch: hsl(33deg 100% 50%)
+  on_swatch: white
 yellow:
   name: Yellow
   swatch: hsl(51deg 100% 50%)
+  on_swatch: black
 green:
   name: Green
   swatch: hsl(123deg 46% 44%)
+  on_swatch: white
 blue:
   name: Blue
   swatch: hsl(201deg 100% 56%)
+  on_swatch: white
 pink:
   name: Pink
   swatch: hsl(331deg 100% 56%)
+  on_swatch: white
 purple:
   name: Purple
   swatch: hsl(283deg 98% 34%)
+  on_swatch: white
 brown:
   name: Brown
   swatch: hsl(33deg 92% 20%)
+  on_swatch: white

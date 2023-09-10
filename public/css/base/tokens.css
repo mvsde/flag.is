@@ -18,7 +18,7 @@
 @media (prefers-color-scheme: dark) {
 	:root {
 		--color-background: hsl(200deg 30% 15%);
-		--color-border-divider: hsl(200deg 30% 25%);
-		--color-border-interactive: hsl(200deg 30% 30%);
+		--color-border-divider: hsl(200deg 30% 20%);
+		--color-border-interactive: hsl(200deg 30% 40%);
 	}
 }

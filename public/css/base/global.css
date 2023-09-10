@@ -6,6 +6,7 @@
 
 html {
 	font-family: system-ui, sans-serif;
+	scrollbar-gutter: stable;
 }
 
 body {

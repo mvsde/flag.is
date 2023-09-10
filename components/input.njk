@@ -11,8 +11,14 @@
 	</div>
 {% endmacro %}
 
-{% macro checkbox(label, id, name, value) %}
-	<div class="Input Input--checkbox">
+{% macro checkbox(label, foreground, background, id, name, value) %}
+	<div
+		class="Input Input--checkbox"
+		style="
+			--foreground: {{ foreground }};
+			--background: {{ background }};
+		"
+	>
 		<input
 			type="checkbox"
 			id="{{ id }}"
@@ -20,7 +26,7 @@
 			value="{{ value }}"
 		>
 		<label for="{{ id }}">
-			{{ label|safe }}
+			<span>{{ label|safe }}</span>
 		</label>
 	</div>
 {% endmacro %}

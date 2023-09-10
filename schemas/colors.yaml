@@ -7,9 +7,12 @@ patternProperties:
     required:
       - name
       - swatch
+      - on_swatch
     additionalProperties: false
     properties:
       name:
         type: string
       swatch:
+        type: string
+      on_swatch:
         type: string

@@ -12,7 +12,6 @@
 @import url("./components/input.css") layer(components);
 @import url("./components/rich-text.css") layer(components);
 @import url("./components/search.css") layer(components);
-@import url("./components/swatch.css") layer(components);
 
 /* Utilities */
 @import url("./utilities/container.css") layer(utilities);

@@ -1,5 +1,4 @@
 {% import "input.njk" as input %}
-{% from "swatch.njk" import swatch %}
 
 <div class="Search js-Search">
 	<form class="Search-form js-Search-form">
@@ -17,7 +16,9 @@
 			<div class="Fieldset-columns">
 				{% for id, color in colors %}
 					{{ input.checkbox(
-						label = swatch(color.swatch) ~ color.name,
+						label = color.name,
+						foreground = color.on_swatch,
+						background = color.swatch,
 						id = "color-" ~ id,
 						name = "colors",
 						value = id

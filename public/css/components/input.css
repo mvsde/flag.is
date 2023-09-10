@@ -31,13 +31,32 @@
 }
 
 .Input--checkbox label {
+	align-items: center;
+	display: flex;
 	flex-grow: 1;
-	padding-block-start: 0.15rem;
-	padding-inline-start: 0.5rem;
+	gap: 0.5rem;
+}
+
+.Input--checkbox label::before {
+	--size: 1.5rem;
+
+	background: var(--background);
+	block-size: var(--size);
+	border: var(--border-interactive);
+	border-radius: var(--border-radius);
+	color: var(--foreground);
+	content: "";
+	font-size: 1.75rem;
+	inline-size: var(--size);
+	line-height: 0.8;
+	text-align: center;
+}
+
+.Input--checkbox input:checked + label::before {
+	content: "×";
 }
 
 .Input--checkbox input {
-	block-size: 1.5rem;
-	flex-shrink: 0;
-	inline-size: 1.5rem;
+	opacity: 0.01;
+	position: absolute;
 }
