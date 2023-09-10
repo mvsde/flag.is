@@ -1,4 +1,10 @@
-{% macro text(label, id, name, value = "") %}
+{% macro render_attributes(attributes = {}) %}
+	{% for key, value in attributes %}
+		{{ key }}="{{ value }}"
+	{% endfor %}
+{% endmacro %}
+
+{% macro text(label, id, name, value = "", attributes) %}
 	<div class="Input Input--text">
 		<label for="{{ id }}">
 			{{ label }}
@@ -7,11 +13,12 @@
 			id="{{ id }}"
 			name="{{ name }}"
 			value="{{ value }}"
+			{{ render_attributes(attributes) }}
 		>
 	</div>
 {% endmacro %}
 
-{% macro checkbox(label, foreground, background, id, name, value) %}
+{% macro checkbox(label, foreground, background, id, name, value, attributes) %}
 	<div
 		class="Input Input--checkbox"
 		style="
@@ -24,6 +31,7 @@
 			id="{{ id }}"
 			name="{{ name }}"
 			value="{{ value }}"
+			{{ render_attributes(attributes) }}
 		>
 		<label for="{{ id }}">
 			<span>{{ label|safe }}</span>
