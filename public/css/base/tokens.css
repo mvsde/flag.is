@@ -23,6 +23,10 @@
 
 		/* Outline */
 		--color-outline-focus: hsl(40deg 90% 50%);
+
+		/* Status */
+		--color-warning: hsl(40deg 80% 80%);
+		--color-on-warning: hsl(40deg 50% 10%);
 	}
 }
 
@@ -41,5 +45,9 @@
 
 		/* Outline */
 		--color-outline-focus: hsl(40deg 90% 50%);
+
+		/* Status */
+		--color-warning: hsl(40deg 40% 20%);
+		--color-on-warning: hsl(40deg 50% 90%);
 	}
 }

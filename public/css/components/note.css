@@ -1,0 +1,9 @@
+.Note {
+	border-radius: var(--border-radius);
+	padding: 1rem;
+}
+
+.Note--warning {
+	background: var(--color-warning);
+	color: var(--color-on-warning);
+}

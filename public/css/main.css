@@ -10,6 +10,7 @@
 @import url("./components/footer.css") layer(components);
 @import url("./components/header.css") layer(components);
 @import url("./components/input.css") layer(components);
+@import url("./components/note.css") layer(components);
 @import url("./components/rich-text.css") layer(components);
 @import url("./components/search.css") layer(components);
 
