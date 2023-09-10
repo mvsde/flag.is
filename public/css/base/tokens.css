@@ -10,18 +10,36 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--color-background: hsl(200deg 30% 95%);
+		--color-background: hsl(0deg 0% 100%);
+		--color-text: hsl(0deg 0% 10%);
+
+		/* Box */
+		--color-box: hsl(200deg 30% 95%);
+		--color-on-box: hsl(200deg 30% 20%);
+
+		/* Border */
 		--color-border-divider: hsl(200deg 30% 80%);
 		--color-border-interactive: hsl(200deg 30% 40%);
+
+		/* Outline */
 		--color-outline-focus: hsl(40deg 90% 50%);
 	}
 }
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-background: hsl(200deg 30% 15%);
+		--color-background: hsl(0deg 0% 0%);
+		--color-text: hsl(0deg 0% 90%);
+
+		/* Box */
+		--color-box: hsl(200deg 30% 15%);
+		--color-on-box: hsl(200deg 30% 90%);
+
+		/* Border */
 		--color-border-divider: hsl(200deg 30% 20%);
 		--color-border-interactive: hsl(200deg 30% 40%);
+
+		/* Outline */
 		--color-outline-focus: hsl(40deg 90% 50%);
 	}
 }

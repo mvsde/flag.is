@@ -1,4 +1,9 @@
 .Header {
-	background: var(--color-background);
+	background: var(--color-box);
+	color: var(--color-on-box);
 	padding-block: 1rem;
+}
+
+.Header-logo {
+	font-weight: 700;
 }

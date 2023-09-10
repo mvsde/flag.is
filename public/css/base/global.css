@@ -10,6 +10,8 @@ html {
 }
 
 body {
+	background: var(--color-background);
+	color: var(--color-text);
 	display: flex;
 	flex-direction: column;
 	min-block-size: 100dvb;
