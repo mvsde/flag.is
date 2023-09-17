@@ -9,6 +9,9 @@
 		<title>{% if not isHome %}{{ title }} | {% endif %}flag.is</title>
 
 		<script type="module" src="/js/main.js"></script>
+		{% if env === "production" %}
+			<script type="module" src="/js/worker.js"></script>
+		{% endif %}
 		<link rel="stylesheet" href="/css/main.css">
 
 		{% if description %}

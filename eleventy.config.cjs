@@ -1,5 +1,7 @@
 const yaml = require("yaml");
-const image = import("./image.js");
+
+const image = import("./eleventy/image.js");
+const metaData = import("./eleventy/meta-data.js");
 
 const DIRECTORIES = {
 	// Relative to current directory.
@@ -22,12 +24,18 @@ module.exports = function (eleventyConfig) {
 
 	// Data
 	eleventyConfig.addDataExtension("yaml", (content) => yaml.parse(content));
+	eleventyConfig.addGlobalData("env", process.env.NODE_ENV);
 	eleventyConfig.addGlobalData("layout", "default.njk");
 	eleventyConfig.addGlobalData("base", process.env.URL);
 
 	// Shortcodes
 	eleventyConfig.addShortcode("image", async (inputPath, preset) =>
 		(await image).generateImage(inputPath, preset),
+	);
+
+	// Events
+	eleventyConfig.on("eleventy.after", async () =>
+		(await metaData).writeMetaData(),
 	);
 
 	return {

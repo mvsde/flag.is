@@ -5,7 +5,7 @@ import process from "node:process";
 
 import sharp from "sharp";
 
-import { DIRECTORIES } from "./eleventy.config.cjs";
+import { DIRECTORIES } from "../eleventy.config.cjs";
 
 /**
  * @param {string} inputPath
