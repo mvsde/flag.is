@@ -24,7 +24,7 @@ module.exports = function (eleventyConfig) {
 
 	// Data
 	eleventyConfig.addDataExtension("yaml", (content) => yaml.parse(content));
-	eleventyConfig.addGlobalData("env", process.env.NODE_ENV);
+	eleventyConfig.addGlobalData("sw", process.env.SW === "true");
 	eleventyConfig.addGlobalData("layout", "default.njk");
 	eleventyConfig.addGlobalData("base", process.env.URL);
 

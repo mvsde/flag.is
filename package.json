@@ -4,8 +4,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "NODE_ENV=development URL=http://localhost:8080 eleventy --incremental --serve",
-		"build": "NODE_ENV=production URL=$URL eleventy",
+		"dev": "URL=http://localhost:8080 eleventy --incremental --serve",
+		"build": "SW=true BLUR=true URL=$URL eleventy",
 		"format": "prettier --write .",
 		"lint": "npm run lint:css && npm run lint:js && npm run lint:format",
 		"lint:css": "stylelint --ignore-path .gitignore **/*.css",

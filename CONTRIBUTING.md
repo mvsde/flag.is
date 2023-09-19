@@ -20,6 +20,18 @@ npm install
 npm run dev
 ```
 
+Run development mode with service worker:
+
+```sh
+SW=true npm run dev
+```
+
+Run development mode with blurred social images:
+
+```sh
+BLUR=true npm run dev
+```
+
 ## Formatting
 
 ```sh

@@ -52,7 +52,7 @@ async function createFlag(inputPath) {
 
 		const background = sharp(file)
 			.resize({ width, height })
-			.blur(process.env.NODE_ENV === "production" && 100)
+			.blur(process.env.BLUR === "true" && 100)
 			.ensureAlpha(0.3)
 			.flatten({ background: "#fff" });
 
