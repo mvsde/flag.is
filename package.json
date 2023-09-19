@@ -19,6 +19,7 @@
 		"eslint-config-prettier": "^9.0.0",
 		"eslint-plugin-n": "^16.1.0",
 		"eslint-plugin-simple-import-sort": "^10.0.0",
+		"glob": "^10.3.4",
 		"globals": "^13.21.0",
 		"prettier": "^3.0.3",
 		"sharp": "^0.32.5",

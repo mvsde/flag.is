@@ -1,19 +1,14 @@
 /// <reference lib="webworker" />
 
+// @ts-expect-error
+import { CACHE_ASSETS } from "./cache-assets.js";
 import {
 	BUILD_METADATA_URL,
 	CACHE_CLEAR_EVENT,
 	CACHE_NAME,
-	CACHE_ON_INSTALL,
 } from "./js/config.js";
 
-/**
- * @typedef {object} BuildMetadata
- * @property {string} date
- */
-
 const sw = /** @type {ServiceWorkerGlobalScope & typeof self} */ (self);
-
 let cacheValidateTimeoutID;
 
 sw.addEventListener("install", onInstall);
@@ -23,11 +18,13 @@ sw.addEventListener("fetch", onFetch);
  * @param {ExtendableEvent} event
  */
 function onInstall(event) {
+	console.log("[SW] Install");
+
 	sw.skipWaiting();
 
 	const preCachedAssets = caches
 		.open(CACHE_NAME)
-		.then((cache) => cache.addAll(CACHE_ON_INSTALL));
+		.then((cache) => cache.addAll(CACHE_ASSETS));
 
 	event.waitUntil(preCachedAssets);
 }
@@ -42,8 +39,10 @@ function onFetch(event) {
 
 	event.respondWith(getCachedResource(event.request));
 
-	clearTimeout(cacheValidateTimeoutID);
-	cacheValidateTimeoutID = setTimeout(async () => validateCache(), 1000);
+	if (navigator.onLine) {
+		clearTimeout(cacheValidateTimeoutID);
+		cacheValidateTimeoutID = setTimeout(async () => validateCache(), 1000);
+	}
 }
 
 /**
@@ -74,6 +73,11 @@ async function validateCache() {
 	if (!cachedResponse) {
 		return;
 	}
+
+	/**
+	 * @typedef {object} BuildMetadata
+	 * @property {string} date
+	 */
 
 	/** @type {BuildMetadata} */
 	const cachedData = await cachedResponse.json();
