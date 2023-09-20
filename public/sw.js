@@ -2,17 +2,14 @@
 
 // @ts-expect-error
 import { CACHE_ASSETS } from "./cache-assets.js";
-import {
-	BUILD_METADATA_URL,
-	CACHE_CLEAR_EVENT,
-	CACHE_NAME,
-} from "./js/config.js";
+import { BUILD_METADATA_URL, CACHE_NAME, EVENT } from "./js/config.js";
 
 const sw = /** @type {ServiceWorkerGlobalScope & typeof self} */ (self);
 let cacheValidateTimeoutID;
 
 sw.addEventListener("install", onInstall);
 sw.addEventListener("fetch", onFetch);
+sw.addEventListener("message", onMessage);
 
 /**
  * @param {ExtendableEvent} event
@@ -46,6 +43,17 @@ function onFetch(event) {
 }
 
 /**
+ * @param {ExtendableMessageEvent} event
+ */
+function onMessage(event) {
+	const name = event.data.name;
+
+	if (name === EVENT.START_UPDATE) {
+		refreshCache();
+	}
+}
+
+/**
  * @param {Request} request
  * @returns {Promise<Response>}
  */
@@ -68,28 +76,40 @@ async function validateCache() {
 	const cachedResponse = await cache.match(BUILD_METADATA_URL);
 
 	const fetchedResponse = await fetch(BUILD_METADATA_URL);
-	cache.put(BUILD_METADATA_URL, fetchedResponse.clone());
 
 	if (!cachedResponse) {
 		return;
 	}
 
-	/**
-	 * @typedef {object} BuildMetadata
-	 * @property {string} date
-	 */
-
-	/** @type {BuildMetadata} */
+	/** @type {import("../types").BuildInformation} */
 	const cachedData = await cachedResponse.json();
 
-	/** @type {BuildMetadata} */
+	/** @type {import("../types").BuildInformation} */
 	const fetchedData = await fetchedResponse.json();
 
-	if (cachedData.date !== fetchedData.date) {
-		caches.delete(CACHE_NAME);
+	if (cachedData.date === fetchedData.date) {
+		return;
+	}
 
-		for (const client of await sw.clients.matchAll()) {
-			client.postMessage({ name: CACHE_CLEAR_EVENT });
-		}
+	messageToClients({ name: EVENT.UPDATE_AVAILABLE });
+}
+
+async function refreshCache() {
+	await caches.delete(CACHE_NAME);
+
+	const cache = await caches.open(CACHE_NAME);
+	await cache.addAll(CACHE_ASSETS);
+
+	messageToClients({ name: EVENT.UPDATE_DONE });
+}
+
+/**
+ * @param {import("../types").SWMessage} message
+ */
+async function messageToClients(message) {
+	const clients = await sw.clients.matchAll();
+
+	for (const client of clients) {
+		client.postMessage(message);
 	}
 }

@@ -6,11 +6,11 @@ import { DIRECTORIES } from "../eleventy.config.cjs";
 import { BUILD_METADATA_URL, CACHE_ASSETS_URL } from "../public/js/config.js";
 
 export async function writeMetaData() {
-	await writeCacheAssetList();
+	await writeCacheAssets();
 	await writeBuildInformation();
 }
 
-async function writeCacheAssetList() {
+async function writeCacheAssets() {
 	const filename = `${DIRECTORIES.output}${CACHE_ASSETS_URL}`;
 
 	const publicFiles = await glob("**/*", {
@@ -24,26 +24,37 @@ async function writeCacheAssetList() {
 		nodir: true,
 	});
 
-	const data = `export const CACHE_ASSETS = [
-	"/",
-	"${BUILD_METADATA_URL}",
-	"${CACHE_ASSETS_URL}",
-	${publicFiles.map((file) => `"/${file}",`).join("\n\t")}
-	${flagImageFiles.map((file) => `"/img/${file}",`).join("\n\t")}
-];
-`;
+	/** @type {import("../types").CacheAssets} */
+	const assets = [
+		"/",
+		BUILD_METADATA_URL,
+		CACHE_ASSETS_URL,
+		...publicFiles.map((file) => `/${file}`),
+		...flagImageFiles.map((file) => `/img/${file}`),
+	];
+
+	// The service worker reinstalls if its code (or imported code) changes.
+	// To avoid reinstallation due to different cache assets array order,
+	// sort the array to create a stable order.
+	assets.sort();
+
+	const serializedAssets = JSON.stringify(assets, null, "\t");
+	const serializedData = `export const CACHE_ASSETS = ${serializedAssets};`;
 
 	console.log(`[meta] Writing ${filename}`);
-	return fs.writeFile(filename, data);
+	await fs.writeFile(filename, serializedData);
 }
 
-function writeBuildInformation() {
+async function writeBuildInformation() {
 	const filename = `${DIRECTORIES.output}${BUILD_METADATA_URL}`;
 
+	/** @type {import("../types").BuildInformation} */
 	const data = {
 		date: new Date().toISOString(),
 	};
 
+	const serializedData = JSON.stringify(data, null, "\t");
+
 	console.log(`[meta] Writing ${filename}`);
-	return fs.writeFile(filename, JSON.stringify(data));
+	await fs.writeFile(filename, serializedData);
 }
