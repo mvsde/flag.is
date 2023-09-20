@@ -8,8 +8,8 @@
 
 		<title>{% if not isHome %}{{ title }} | {% endif %}flag.is</title>
 
-		<script type="module" src="/js/main.js"></script>
 		{% if sw %}<script type="module" src="/js/worker.js"></script>{% endif %}
+		<script type="module" src="/js/main.js"></script>
 		<link rel="stylesheet" href="/css/main.css">
 
 		{% if description %}
