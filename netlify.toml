@@ -4,9 +4,6 @@
   command = "npm run build"
   publish = "build"
 
-[build.environment]
-  NODE_VERSION = "20"
-
 # Redirects
 
 ## pride-flags.netlify.app
