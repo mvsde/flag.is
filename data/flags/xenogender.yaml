@@ -1,7 +1,10 @@
 name: Xenogender
+description: Gender that can’t be defined by a standard human understanding of gender, usually described with metaphors.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Xenogender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#xenogender
 aspect_ratio: 1.66667
 colors:
   - red
