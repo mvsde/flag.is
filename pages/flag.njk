@@ -1,7 +1,20 @@
 {% set flag = flags[id] %}
 
-{% if flag.aliases %}
-	<p>{{ flag.aliases|join(", ") }}</p>
+{% if flag.aliases or flag.description %}
+	<dl>
+		{% if flag.aliases %}
+			<div>
+				<dt>Also known as:</dt>
+				<dd>{{ flag.aliases|join(", ") }}</dd>
+			</div>
+		{% endif %}
+		{% if flag.description %}
+			<div>
+				<dt>Description:</dt>
+				<dd>{{ flag.description }}</dd>
+			</div>
+		{% endif %}
+	</dl>
 {% endif %}
 
 <section>

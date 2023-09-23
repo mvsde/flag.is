@@ -5,7 +5,6 @@
 }
 
 html {
-	font-family: system-ui, sans-serif;
 	scrollbar-gutter: stable;
 }
 
@@ -14,6 +13,8 @@ body {
 	color: var(--color-text);
 	display: flex;
 	flex-direction: column;
+	font-family: system-ui, sans-serif;
+	line-height: 1.5;
 	min-block-size: 100dvb;
 }
 
@@ -46,6 +47,16 @@ a {
 
 ul:not([class]) {
 	padding-inline-start: 1rem;
+}
+
+dl:not([class]) {
+	display: grid;
+	gap: 1rem;
+
+	& dt {
+		font-size: 0.875rem;
+		margin-block-end: 0.125rem;
+	}
 }
 
 img {

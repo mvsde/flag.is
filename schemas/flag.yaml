@@ -12,6 +12,8 @@ properties:
     type: array
     items:
       type: string
+  description:
+    type: string
   links:
     type: array
     items:
