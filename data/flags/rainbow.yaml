@@ -1,7 +1,10 @@
 name: Rainbow
+description: One of the widest known and used flags for LGBTQIA+ people.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#lgbt
 aspect_ratio: 1.61875
 colors:
   - red
