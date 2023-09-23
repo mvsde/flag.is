@@ -1,7 +1,12 @@
 name: Heterosexuality
+aliases:
+  - Straight
+description: Sexual attraction to genders different from one’s own. Traditionally used for attraction between the binary “woman” and “man” genders.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Heterosexuality
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#heterosexual
 aspect_ratio: 1.5
 colors:
   - black
