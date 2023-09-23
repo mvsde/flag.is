@@ -1,7 +1,10 @@
 name: Bisexuality
+description: Sexual attraction to two or more genders, or to same and different genders.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Bisexuality
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#bisexual
 aspect_ratio: 1.66667
 colors:
   - pink
