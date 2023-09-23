@@ -1,7 +1,12 @@
 name: Pansexuality
+aliases:
+  - Pansexual
+description: Sexual attraction to all genders.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Pansexuality
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#pansexual
 aspect_ratio: 1.66667
 colors:
   - pink
