@@ -1,9 +1,14 @@
 name: Demiboy
 aliases:
   - Demiman
+  - Demiguy
+  - Demigender
+description: Gender that is partially, but not fully, a boy or a man.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Demiboy
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#demiboy
 aspect_ratio: 1.42857
 colors:
   - black
