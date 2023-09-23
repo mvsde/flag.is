@@ -1,7 +1,13 @@
 name: Two-spirit
+aliases:
+  - Two spirit
+  - Twospirited
+description: Third gender or gender variance in Native American cultures.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Two-spirit
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#two-spirit
 aspect_ratio: 1.66667
 colors:
   - white

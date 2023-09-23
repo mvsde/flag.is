@@ -1,7 +1,12 @@
 name: Multisexuality
+aliases:
+  - Multioriented
+description: Attraction to more than one gender, often used as an umbrella term.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Multisexuality
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#multisexual
 aspect_ratio: 1.66667
 colors:
   - purple

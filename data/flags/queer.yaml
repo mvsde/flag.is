@@ -1,7 +1,10 @@
 name: Queer
+description: Umbrella term for people who are not cisgender, heterosexual, allosexual, or alloromantic. Not every LGBTQIA+ person uses the term queer.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Queer
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#queer
 aspect_ratio: 1.5
 colors:
   - white

@@ -1,7 +1,12 @@
 name: Transgender
+aliases:
+  - Trans
+description: Someone whose gender assigned at birth is different than their actual gender.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Transgender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#transgender
 aspect_ratio: 1.66667
 colors:
   - blue

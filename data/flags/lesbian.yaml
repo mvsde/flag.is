@@ -1,7 +1,12 @@
 name: Lesbian
+aliases:
+  - Homosexuality
+description: Homosexual woman or girl, also used in a broader sense to mean someone (often a woman) experiencing queer attraction to women.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Lesbian
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#lesbian
 aspect_ratio: 1.77778
 colors:
   - red

@@ -1,9 +1,13 @@
 name: Aromanticism
 aliases:
+  - Aromantic
   - Aro
+description: Little to no romantic attraction.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Aromanticism
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#aromantic
 aspect_ratio: 1.66667
 colors:
   - green

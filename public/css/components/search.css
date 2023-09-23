@@ -41,6 +41,7 @@
 	border-block-start: var(--border-divider);
 	display: flex;
 	flex-grow: 1;
+	line-height: 1.3;
 	outline-offset: 0;
 	padding: 1rem;
 }

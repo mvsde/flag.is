@@ -1,7 +1,13 @@
 name: Bigender
+aliases:
+  - Bi-gender
+  - Dual gender
+description: Two separate (but not necessarily binary) gender identities.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Bigender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#bigender
 aspect_ratio: 1.66667
 colors:
   - pink

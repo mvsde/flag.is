@@ -29,6 +29,11 @@
 	to = "/:splat"
 	status = 301
 
+[[redirects]]
+	from = "/genderfluid/"
+	to = "/gender-fluidity/"
+	status = 301
+
 ## 404
 
 [[redirects]]

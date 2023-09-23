@@ -1,9 +1,13 @@
 name: Non-binary
 aliases:
+  - Nonbinary
   - Enby
+description: Gender outside the binary “woman” or “man”.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Non-binary_gender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#non-binary
 aspect_ratio: 1.5
 colors:
   - yellow

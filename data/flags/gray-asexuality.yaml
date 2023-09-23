@@ -1,9 +1,15 @@
 name: Gray asexuality
 aliases:
+  - Grayasexuality
   - Grayace
+  - Gray sexuality
+  - Graysexuality
+description: Spectrum between asexuality and allosexuality.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Gray_asexuality
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#grayasexual
 aspect_ratio: 1.66667
 colors:
   - purple

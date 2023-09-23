@@ -1,9 +1,14 @@
 name: Gender non-conforming
 aliases:
+  - Gender nonconforming
   - GNC
+  - Gender variance
+description: Non-stereotypical gender expression or behavior, non-conformance with societal and cultural gender norms.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Gender_non-conforming
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#gnc
 aspect_ratio: 1.66667
 colors:
   - purple
