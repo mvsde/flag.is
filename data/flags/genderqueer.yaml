@@ -1,7 +1,10 @@
 name: Genderqueer
+description: Non-normative experience with gender.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Genderqueer
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#genderqueer
 aspect_ratio: 1.66667
 colors:
   - purple
