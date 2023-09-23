@@ -1,7 +1,13 @@
 name: Polyamory
+aliases:
+  - Polyamorous
+  - Poly
+description: Practice or desire for multiple relationships or a relationship with more than one person at the same time.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Polyamory
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#polyamory
 aspect_ratio: 1.66667
 colors:
   - yellow
