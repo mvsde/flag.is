@@ -1,7 +1,15 @@
 name: Agender
+aliases:
+  - Genderless
+  - Gender-free
+  - Non-gendered
+  - Ungendered
+description: People without a gender.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Agender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#agender
 aspect_ratio: 1.42857
 colors:
   - black
