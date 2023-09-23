@@ -1,9 +1,13 @@
 name: Queer anarchism
 aliases:
   - anarcha-queer
+  - anarchaqueer
+description: Connecting anarchism with queer theory, seeking queer liberation and abolition of hierarchies.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Queer_anarchism
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#anarcha-queer
 aspect_ratio: 1.66667
 colors:
   - pink
