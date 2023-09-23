@@ -1,7 +1,12 @@
 name: Gay
+aliases:
+  - Homosexuality
+description: Homosexual man or boy, also used in a broader sense to mean same-gender attraction.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Gay_men
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#gay
 aspect_ratio: 1.66667
 colors:
   - green
