@@ -1,0 +1,18 @@
+name: Gender fluidity
+aliases:
+  - Genderfluid
+description: Shifting gender over time where fluctuations can occur in identity or expression.
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Gender_fluidity
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#genderfluid
+aspect_ratio: 1.66667
+colors:
+  - pink
+  - white
+  - purple
+  - black
+  - blue
+patterns:
+  - stripes_horizontal
