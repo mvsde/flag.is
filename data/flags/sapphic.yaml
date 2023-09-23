@@ -1,9 +1,13 @@
 name: Sapphic
 aliases:
+  - Women loving women
   - WLW
+description: A woman or female-aligned non-binary person attracted to women or female-aligned non-binary people.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Sapphism
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#sapphic
 aspect_ratio: 1.66667
 colors:
   - purple
