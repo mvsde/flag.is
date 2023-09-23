@@ -1,7 +1,10 @@
 name: Progress pride
+description: Rainbow flag with additional colors for Black, Brown, indigenous, and trans people.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#progress
 aspect_ratio: 1.5748
 colors:
   - white

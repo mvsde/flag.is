@@ -1,9 +1,12 @@
 name: Progress pride
 aliases:
   - New progress pride
+description: Rainbow flag with additional colors for Black, Brown, indigenous, trans, and intersex people.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#progress
 aspect_ratio: 1.5748
 colors:
   - yellow
