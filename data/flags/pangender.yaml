@@ -1,7 +1,13 @@
 name: Pangender
+aliases:
+  - Polygender
+  - Omnigender
+description: Multiple or all gender identities.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Pangender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#pangender
 aspect_ratio: 1.66667
 colors:
   - yellow
