@@ -1,7 +1,12 @@
 name: Omnisexuality
+aliases:
+  - Omnisexual
+description: Sexual attraction to all genders, but there may be preference towards some genders.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Omnisexuality
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#omnisexual
 aspect_ratio: 1.66667
 colors:
   - pink
