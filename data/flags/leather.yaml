@@ -1,9 +1,10 @@
 name: Leather
-aliases:
-  - Leather subculture
+description: Practices and clothing involving leather.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Leather_subculture
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#leather
 aspect_ratio: 1.5
 colors:
   - red
