@@ -1,9 +1,16 @@
 name: Demigirl
 aliases:
   - Demiwoman
+  - Demigal
+  - Demilady
+  - Demifemme
+  - Demigender
+description: Gender that is partially, but not fully, a girl or a woman.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Demigirl
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#demigirl
 aspect_ratio: 1.42857
 colors:
   - black
