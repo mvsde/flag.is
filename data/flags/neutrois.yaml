@@ -1,7 +1,10 @@
 name: Neutrois
+description: Neutral gender, but not agender.
 links:
   - title: Wiktionary
     href: https://en.wiktionary.org/wiki/neutrois
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#neutrois
 aspect_ratio: 1.66667
 colors:
   - white
