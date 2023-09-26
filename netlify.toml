@@ -4,6 +4,10 @@
   command = "npm run build"
   publish = "build"
 
+[build.environment]
+	SW = "true"
+	BLUR = "true"
+
 # Redirects
 
 ## pride-flags.netlify.app
@@ -33,10 +37,3 @@
 	from = "/genderfluid/"
 	to = "/gender-fluidity/"
 	status = 301
-
-## 404
-
-[[redirects]]
-  from = "/*"
-  to = "/404.html"
-  status = 404
