@@ -97,10 +97,12 @@ async function validateCache() {
 async function refreshCache() {
 	await caches.delete(CACHE_NAME);
 
+	// Pretend update is done before the cache has been repopulated so the site
+	// can already reload and show downloaded content progressively.
+	messageToClients({ name: EVENT.UPDATE_DONE });
+
 	const cache = await caches.open(CACHE_NAME);
 	await cache.addAll(CACHE_ASSETS);
-
-	messageToClients({ name: EVENT.UPDATE_DONE });
 }
 
 /**
