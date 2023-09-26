@@ -1,4 +1,5 @@
 {% set isHome = page.url == "/" -%}
+{% set swFile = "sw-register.js" if sw else "sw-unregister.js" -%}
 
 <!doctype html>
 <html lang="en">
@@ -8,7 +9,7 @@
 
 		<title>{% if not isHome %}{{ title }} | {% endif %}flag.is</title>
 
-		{% if sw %}<script type="module" src="/js/worker.js"></script>{% endif %}
+		<script type="module" src="/js/{{ swFile }}"></script>
 		<script type="module" src="/js/main.js"></script>
 		<link rel="stylesheet" href="/css/main.css">
 
