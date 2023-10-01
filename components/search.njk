@@ -71,9 +71,14 @@
 						width="{{ width }}"
 						height="{{ (width / flag.aspect_ratio)|round }}"
 						loading="lazy"
+						{% if flag.flagAlt %}
+						aria-describedby="{{ id }}-flag-description"
+						{% endif %}
 					>
-
 					<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
+					{% if flag.flagAlt %}
+					<p hidden id="{{ id }}-flag-description">{{ flag.flagAlt }}</p>
+					{% endif %}
 				</li>
 			{% endfor %}
 		</ul>
