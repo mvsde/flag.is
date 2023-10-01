@@ -21,7 +21,8 @@ function onInstall(event) {
 
 	const preCachedAssets = caches
 		.open(CACHE_NAME)
-		.then((cache) => cache.addAll(CACHE_ASSETS));
+		.then((cache) => cache.addAll(CACHE_ASSETS))
+		.catch((error) => console.log(error));
 
 	event.waitUntil(preCachedAssets);
 }
@@ -101,8 +102,12 @@ async function refreshCache() {
 	// can already reload and show downloaded content progressively.
 	messageToClients({ name: EVENT.UPDATE_DONE });
 
-	const cache = await caches.open(CACHE_NAME);
-	await cache.addAll(CACHE_ASSETS);
+	try {
+		const cache = await caches.open(CACHE_NAME);
+		await cache.addAll(CACHE_ASSETS);
+	} catch (error) {
+		console.log(error);
+	}
 }
 
 /**
