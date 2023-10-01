@@ -10,7 +10,7 @@ colors:
   - white
   - yellow
   - red
-  - brown
+  - gray
 patterns:
   - solid
   - stripes_diagonal
