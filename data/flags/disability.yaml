@@ -1,0 +1,14 @@
+name: Disability
+aliases:
+  - Flag of the Rights of Persons with Disabilities
+description: Representing disabled people.
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Disability_flag
+aspect_ratio: 1.5
+colors:
+  - yellow
+  - white
+  - brown
+patterns:
+  - stripes_horizontal

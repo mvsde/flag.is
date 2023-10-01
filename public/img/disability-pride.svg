@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 300">
+	<g stroke-miterlimit="10" stroke-width="1.328">
+		<path fill="#595959" stroke="#595959" d="M.664.664h398.66v298.67H.664z" />
+		<path fill="#cf7280" stroke="#cf7280" d="m.664 99.319 145.38 107.83 124.28 92.185h47.255L.67 62.144z" />
+		<path fill="#eede77" stroke="#eede77" d="M.664 24.093V62.15l316.91 237.19h49.315z" />
+		<path fill="#e8e8e8" stroke="#e8e8e8" d="M21.674.664H.664v23.43l366.23 275.24h32.438v-15.067z" />
+		<path fill="#7bc2e0" stroke="#7bc2e0" d="M21.674.664h50.79l326.61 245.85.252 37.752z" />
+		<path fill="#3bb07d" stroke="#3bb07d" d="M72.463.664h49.62l277.24 208.38-.252 37.473z" />
+	</g>
+</svg>
