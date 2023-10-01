@@ -19,18 +19,12 @@ async function writeCacheAssets() {
 		ignore: ["sw.js", "img/default.social.*"],
 	});
 
-	const flagImageFiles = await glob("*.svg", {
-		cwd: "data/flags",
-		nodir: true,
-	});
-
 	/** @type {import("../types").CacheAssets} */
 	const assets = [
 		"/",
 		BUILD_METADATA_URL,
 		CACHE_ASSETS_URL,
 		...publicFiles.map((file) => `/${file}`),
-		...flagImageFiles.map((file) => `/img/${file}`),
 	];
 
 	// The service worker reinstalls if its code (or imported code) changes.
