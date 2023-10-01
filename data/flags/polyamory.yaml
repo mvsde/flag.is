@@ -12,8 +12,9 @@ aspect_ratio: 1.66667
 colors:
   - yellow
   - white
-  - black
+  - blue
   - red
+  - purple
   - black
 patterns:
   - stripes_horizontal
