@@ -4,6 +4,7 @@ module.exports = {
 		data: "flags",
 		size: 1,
 		alias: "id",
+		addAllPagesToCollections: true,
 	},
 	permalink: (data) => `${data.id}/index.html`,
 	eleventyComputed: {
