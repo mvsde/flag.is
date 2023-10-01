@@ -4,6 +4,7 @@ import {
 	BUILD_METADATA_URL,
 	CACHE_ASSETS_URL,
 	CACHE_NAME,
+	CACHE_VALIDATION_INTERVAL,
 	EVENT,
 } from "./js/config.js";
 
@@ -50,6 +51,8 @@ function onMessage(event) {
 		refreshCache();
 	}
 }
+
+setInterval(() => validateCache(), CACHE_VALIDATION_INTERVAL);
 
 /**
  * @param {Request} request
