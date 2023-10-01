@@ -23,17 +23,10 @@ async function writeCacheAssets() {
 	const assets = [
 		"/",
 		BUILD_METADATA_URL,
-		CACHE_ASSETS_URL,
 		...publicFiles.map((file) => `/${file}`),
 	];
 
-	// The service worker reinstalls if its code (or imported code) changes.
-	// To avoid reinstallation due to different cache assets array order,
-	// sort the array to create a stable order.
-	assets.sort();
-
-	const serializedAssets = JSON.stringify(assets, null, "\t");
-	const serializedData = `export const CACHE_ASSETS = ${serializedAssets};`;
+	const serializedData = JSON.stringify(assets, null, "\t");
 
 	console.log(`[meta] Writing ${filename}`);
 	await fs.writeFile(filename, serializedData);

@@ -1,8 +1,11 @@
 /// <reference lib="webworker" />
 
-// @ts-expect-error
-import { CACHE_ASSETS } from "./cache-assets.js";
-import { BUILD_METADATA_URL, CACHE_NAME, EVENT } from "./js/config.js";
+import {
+	BUILD_METADATA_URL,
+	CACHE_ASSETS_URL,
+	CACHE_NAME,
+	EVENT,
+} from "./js/config.js";
 
 const sw = /** @type {ServiceWorkerGlobalScope & typeof self} */ (self);
 let cacheValidateTimeoutID;
@@ -18,13 +21,7 @@ function onInstall(event) {
 	console.log("[SW] Install");
 
 	sw.skipWaiting();
-
-	const preCachedAssets = caches
-		.open(CACHE_NAME)
-		.then((cache) => cache.addAll(CACHE_ASSETS))
-		.catch((error) => console.log(error));
-
-	event.waitUntil(preCachedAssets);
+	event.waitUntil(preCache());
 }
 
 /**
@@ -95,6 +92,13 @@ async function validateCache() {
 	messageToClients({ name: EVENT.UPDATE_AVAILABLE });
 }
 
+async function preCache() {
+	const cache = await caches.open(CACHE_NAME);
+	const assets = await getCacheAssetsList();
+
+	await cache.addAll(assets);
+}
+
 async function refreshCache() {
 	await caches.delete(CACHE_NAME);
 
@@ -102,12 +106,15 @@ async function refreshCache() {
 	// can already reload and show downloaded content progressively.
 	messageToClients({ name: EVENT.UPDATE_DONE });
 
-	try {
-		const cache = await caches.open(CACHE_NAME);
-		await cache.addAll(CACHE_ASSETS);
-	} catch (error) {
-		console.log(error);
-	}
+	await preCache();
+}
+
+/**
+ * @returns {Promise<string[]>}
+ */
+async function getCacheAssetsList() {
+	const response = await fetch(CACHE_ASSETS_URL);
+	return response.json();
 }
 
 /**
