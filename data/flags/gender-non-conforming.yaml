@@ -13,7 +13,7 @@ aspect_ratio: 1.66667
 colors:
   - purple
   - pink
-  - black
+  - blue
   - white
 patterns:
   - stripes_horizontal
