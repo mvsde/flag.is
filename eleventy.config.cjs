@@ -19,7 +19,6 @@ module.exports = function (eleventyConfig) {
 	// Copy
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 	eleventyConfig.addPassthroughCopy({ public: "/" });
-	eleventyConfig.addPassthroughCopy({ "data/flags/*.svg": "img" });
 
 	// Data
 	eleventyConfig.addDataExtension("yaml", (content) => yaml.parse(content));
