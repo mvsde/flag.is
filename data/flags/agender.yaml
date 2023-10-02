@@ -10,12 +10,12 @@ links:
     href: https://en.wikipedia.org/wiki/Agender
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#agender
-aspect_ratio: 1.42857
+aspectRatio: 1.42857
 colors:
   - black
   - gray
   - white
   - green
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "7 horizontal stripes. From top to bottom: black, gray, white, light green, white, gray, black."

@@ -4,11 +4,11 @@ lettering:
   name: Lettering
 solid:
   name: Solid
-stripes_diagonal:
+stripesDiagonal:
   name: Stripes <small>Diagonal</small>
-stripes_horizontal:
+stripesHorizontal:
   name: Stripes <small>Horizontal</small>
-stripes_vertical:
+stripesVertical:
   name: Stripes <small>Vertical</small>
 symbol:
   name: Symbol

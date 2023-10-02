@@ -7,13 +7,13 @@ links:
     href: https://en.wikipedia.org/wiki/Ambiamory
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#ambiamory
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - white
   - blue
   - black
   - red
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: Horizontal stripes fade from blue to black to red. In the center of the flag, there is a white lowercase alpha.

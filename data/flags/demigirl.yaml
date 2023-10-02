@@ -11,12 +11,12 @@ links:
     href: https://en.wikipedia.org/wiki/Demigirl
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#demigirl
-aspect_ratio: 1.42857
+aspectRatio: 1.42857
 colors:
   - black
   - gray
   - pink
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "7 horizontal stripes. From top to bottom: gray, light gray, light pink, white, light pink, light gray, gray."

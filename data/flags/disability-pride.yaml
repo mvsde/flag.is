@@ -3,7 +3,7 @@ description: Represents the Disability Pride movement.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Disability_Pride_Month
-aspect_ratio: 1.33333
+aspectRatio: 1.33333
 colors:
   - green
   - blue
@@ -13,5 +13,5 @@ colors:
   - gray
 patterns:
   - solid
-  - stripes_diagonal
+  - stripesDiagonal
 alt: A gray field. A band of pastel stripes (red, yellow, white, blue, green) stretches diagonally from the top left corner to the bottom right corner.

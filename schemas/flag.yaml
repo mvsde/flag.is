@@ -3,7 +3,7 @@ $id: flag
 type: object
 required:
   - name
-  - aspect_ratio
+  - aspectRatio
 additionalProperties: false
 properties:
   name:
@@ -28,7 +28,7 @@ properties:
         href:
           type: string
           format: uri-reference
-  aspect_ratio:
+  aspectRatio:
     type: number
   colors:
     type: array
@@ -56,9 +56,9 @@ properties:
         - chevron
         - lettering
         - solid
-        - stripes_diagonal
-        - stripes_horizontal
-        - stripes_vertical
+        - stripesDiagonal
+        - stripesHorizontal
+        - stripesVertical
         - symbol
   alt:
     type: string

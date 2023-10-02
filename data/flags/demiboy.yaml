@@ -9,12 +9,12 @@ links:
     href: https://en.wikipedia.org/wiki/Demiboy
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#demiboy
-aspect_ratio: 1.42857
+aspectRatio: 1.42857
 colors:
   - black
   - gray
   - blue
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "7 horizontal stripes. From top to bottom: gray, light gray, light blue, white, light blue, light gray, gray."

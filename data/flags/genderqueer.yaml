@@ -5,11 +5,11 @@ links:
     href: https://en.wikipedia.org/wiki/Genderqueer
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#genderqueer
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - purple
   - white
   - green
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "3 horizontal stripes. From top to bottom: lavender, white, green."

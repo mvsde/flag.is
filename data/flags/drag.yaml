@@ -5,7 +5,7 @@ links:
     href: https://en.wikipedia.org/wiki/Drag_(entertainment)
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#drag
-aspect_ratio: 1.5
+aspectRatio: 1.5
 colors:
   - pink
   - purple
@@ -13,5 +13,5 @@ colors:
   - blue
 patterns:
   - symbol
-  - stripes_vertical
+  - stripesVertical
 alt: "3 vertical stripes: purple, white, blue. In the center of the white stripe, there is a pink crown."

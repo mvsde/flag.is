@@ -8,13 +8,13 @@ links:
     href: https://en.wikipedia.org/wiki/Sapphism
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#sapphic
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - purple
   - yellow
   - pink
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: A pink field with a horizontal white stripe running down the middle. In the center, there is a purple and yellow violet motif.

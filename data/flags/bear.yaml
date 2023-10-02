@@ -5,7 +5,7 @@ links:
     href: https://en.wikipedia.org/wiki/Bear_(gay_culture)
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#bear
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - brown
   - orange
@@ -14,6 +14,6 @@ colors:
   - gray
   - black
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: 7 horizontal stripes featuring browns, yellows, and grays. In the top left corner, there is a bear pawprint.

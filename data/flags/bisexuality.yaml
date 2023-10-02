@@ -5,11 +5,11 @@ links:
     href: https://en.wikipedia.org/wiki/Bisexuality
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#bisexual
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - pink
   - purple
   - blue
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "3 horizontal stripes. From top to bottom: a thick magenta stripe, a thin purple stripe, and a thick blue stripe."

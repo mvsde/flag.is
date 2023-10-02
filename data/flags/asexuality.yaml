@@ -8,12 +8,12 @@ links:
     href: https://en.wikipedia.org/wiki/Asexuality
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#asexual
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - black
   - gray
   - white
   - purple
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "4 horizontal stripes. From top to bottom: black, gray, white, purple."

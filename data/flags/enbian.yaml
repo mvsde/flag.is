@@ -8,13 +8,13 @@ links:
     href: https://en.wikipedia.org/wiki/Enbian
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#enbian
-aspect_ratio: 1.625
+aspectRatio: 1.625
 colors:
   - white
   - yellow
   - black
   - purple
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: 5 horizontal stripes range from black to dark purple to light purple. In the center of the flag, there is a yellow crescent moon. A white circle is nestled inside of the moon.

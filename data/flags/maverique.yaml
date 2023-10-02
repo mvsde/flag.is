@@ -3,11 +3,11 @@ description: Strong sense of gender, but autonomous from femininity, masculinity
 links:
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#maverique
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - yellow
   - white
   - orange
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "3 horizontal stripes. From top to bottom: yellow, white, orange."

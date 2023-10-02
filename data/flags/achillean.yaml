@@ -8,12 +8,12 @@ links:
     href: https://en.wiktionary.org/wiki/Achillean
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#achillean
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - green
   - blue
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: A light blue field with a white horizontal stripe running down the middle. In the center of the stripe, there is a green carnation motif.

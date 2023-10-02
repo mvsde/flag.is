@@ -10,11 +10,11 @@ links:
     href: https://en.wikipedia.org/wiki/Gray_asexuality
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#grayasexual
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - purple
   - gray
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "5 horizontal stripes. From top to bottom: purple, gray, white, gray, purple."

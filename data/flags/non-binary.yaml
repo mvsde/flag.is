@@ -8,12 +8,12 @@ links:
     href: https://en.wikipedia.org/wiki/Non-binary_gender
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#non-binary
-aspect_ratio: 1.5
+aspectRatio: 1.5
 colors:
   - yellow
   - white
   - purple
   - black
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "4 horizontal stripes. From top to bottom: yellow, white, purple, black."

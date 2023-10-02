@@ -5,7 +5,7 @@ links:
     href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#lgbt
-aspect_ratio: 1.61875
+aspectRatio: 1.61875
 colors:
   - red
   - orange
@@ -14,5 +14,5 @@ colors:
   - blue
   - purple
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "6 horizontal stripes make a rainbow: red, orange, yellow, green, blue, purple."

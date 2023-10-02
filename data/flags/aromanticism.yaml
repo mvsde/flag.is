@@ -8,12 +8,12 @@ links:
     href: https://en.wikipedia.org/wiki/Aromanticism
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#aromantic
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - green
   - white
   - gray
   - black
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "5 horizontal stripes. From top to bottom: green, light green, white, gray, black."

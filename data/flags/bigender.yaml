@@ -8,12 +8,12 @@ links:
     href: https://en.wikipedia.org/wiki/Bigender
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#bigender
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - pink
   - gray
   - white
   - blue
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "7 horizontal, pastel stripes. From top to bottom: two light pink stripes, a lavender stripe, a white stripe, another lavender stripe, and two blue stripes."

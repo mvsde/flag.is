@@ -5,7 +5,7 @@ links:
     href: https://en.wikipedia.org/wiki/Demisexuality
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#demisexual
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - black
   - white
@@ -13,5 +13,5 @@ colors:
   - gray
 patterns:
   - chevron
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "3 horizontal stripes. From top to bottom: a large white stripe, a thin purple stripe, and a large gray stripe. On the left side of the flag, a large black chevron points to the right."

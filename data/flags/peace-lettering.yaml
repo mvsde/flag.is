@@ -5,7 +5,7 @@ description: Originally from Italy, widely used to demonstrate for peace.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Peace_flag
-aspect_ratio: 1.5
+aspectRatio: 1.5
 colors:
   - white
   - purple
@@ -16,5 +16,5 @@ colors:
   - red
 patterns:
   - lettering
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "7 horizontal stripes make a rainbow, from purple down to red. In the center of the flag, white lettering reads: PACE."

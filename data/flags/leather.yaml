@@ -5,13 +5,13 @@ links:
     href: https://en.wikipedia.org/wiki/Leather_subculture
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#leather
-aspect_ratio: 1.5
+aspectRatio: 1.5
 colors:
   - red
   - black
   - black
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: Horizontal stripes alternate between black and blue, with one white stripe in the middle. A red heart is in the top left corner.

@@ -7,12 +7,12 @@ links:
     href: https://en.wikipedia.org/wiki/Multisexuality
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#multisexual
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - purple
   - white
   - blue
   - pink
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "4 horizontal stripes. From top to bottom: purple, white, light blue, pink."

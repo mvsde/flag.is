@@ -8,7 +8,7 @@ links:
     href: https://en.wikipedia.org/wiki/Two-spirit
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#two-spirit
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - white
   - black
@@ -19,6 +19,6 @@ colors:
   - black
   - purple
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: 6 horizontal stripes make a rainbow. In the center, a black and white motif depicts two feathers attached to a circle.

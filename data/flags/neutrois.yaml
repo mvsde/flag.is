@@ -5,11 +5,11 @@ links:
     href: https://en.wiktionary.org/wiki/neutrois
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#neutrois
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - white
   - green
   - black
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "3 horizontal stripes. From top to bottom: white, green, black."

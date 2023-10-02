@@ -21,7 +21,7 @@
 				{% for id, color in colors %}
 					{{ input.checkbox(
 						label = color.name,
-						foreground = color.on_swatch,
+						foreground = color.onSwatch,
 						background = color.swatch,
 						id = "color-" ~ id,
 						name = "colors",
@@ -70,7 +70,7 @@
 						src="/img/{{ id }}.svg"
 						alt="{{ flag.name }} flag"
 						width="{{ width }}"
-						height="{{ (width / flag.aspect_ratio)|round }}"
+						height="{{ (width / flag.aspectRatio)|round }}"
 						loading="lazy"
 						{% if flag.alt %}
 							aria-describedby="{{ descriptionID }}"

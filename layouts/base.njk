@@ -1,4 +1,4 @@
-{% set is_home = page.url == "/" -%}
+{% set isHome = page.url == "/" -%}
 
 <!doctype html>
 <html lang="en">
@@ -6,7 +6,7 @@
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>{% if not is_home %}{{ title }} | {% endif %}flag.is</title>
+		<title>{% if not isHome %}{{ title }} | {% endif %}flag.is</title>
 
 		<script type="module" src="/js/main.js"></script>
 		<link rel="stylesheet" href="/css/main.css">
@@ -29,8 +29,8 @@
 		<meta property="og:locale" content="en">
 
 		{% if social.image %}
-			<meta property="og:image" content="{{ base }}/{% image social.image, social.image_preset %}">
-			<meta property="og:image:alt" content="{{ social.image_alt }}">
+			<meta property="og:image" content="{{ base }}/{% image social.image, social.imagePreset %}">
+			<meta property="og:image:alt" content="{{ social.imageAlt }}">
 		{% endif %}
 	</head>
 	<body>

@@ -5,7 +5,7 @@ links:
     href: https://en.wikipedia.org/wiki/Rainbow_flag_(LGBT)
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#progress
-aspect_ratio: 1.5748
+aspectRatio: 1.5748
 colors:
   - white
   - pink
@@ -18,5 +18,5 @@ colors:
   - purple
 patterns:
   - chevron
-  - stripes_horizontal
+  - stripesHorizontal
 alt: 6 rainbow horizontal stripes. In the left third, a large chevron points right, comprised of a black and brown stripe, as well as a light blue, light pink, and white stripe reminiscent of the transgender pride flag.

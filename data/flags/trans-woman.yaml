@@ -10,10 +10,10 @@ links:
     href: https://en.wikipedia.org/wiki/Transgender
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#trans%20woman
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - blue
   - pink
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: 7 horizontal stripes. The top and bottom stripes are light blue. The middle stripes are various shades of pink.

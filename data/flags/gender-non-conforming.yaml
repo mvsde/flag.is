@@ -9,12 +9,12 @@ links:
     href: https://en.wikipedia.org/wiki/Gender_non-conforming
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#gnc
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - purple
   - pink
   - blue
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: A dark plum field. A horizontal band runs down the middle, comprised of light plum, blue, white, blue, and light plum stripes.

@@ -7,7 +7,7 @@ links:
     href: https://en.wikipedia.org/wiki/Gender_fluidity
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#genderfluid
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - pink
   - white
@@ -15,5 +15,5 @@ colors:
   - black
   - blue
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "5 horizontal stripes. From top to bottom: pink, white, purple, black, blue."

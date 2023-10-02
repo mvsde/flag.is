@@ -7,7 +7,7 @@ description: Heterosexual and cisgender people supporting LGBTQIA+ rights.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Straight_ally
-aspect_ratio: 1.5
+aspectRatio: 1.5
 colors:
   - red
   - orange
@@ -19,6 +19,6 @@ colors:
   - white
 patterns:
   - chevron
-  - stripes_horizontal
+  - stripesHorizontal
   - symbol
 alt: 6 horizontal stripes alternate black and white. A large, upward-pointing, rainbow-striped chevron, resembling a capital A, is overlaid.

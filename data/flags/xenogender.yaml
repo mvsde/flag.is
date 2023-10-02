@@ -5,7 +5,7 @@ links:
     href: https://en.wikipedia.org/wiki/Xenogender
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#xenogender
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - red
   - pink
@@ -14,5 +14,5 @@ colors:
   - blue
   - purple
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: 7 horizontal stripes make a pastel rainbow.

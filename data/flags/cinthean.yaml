@@ -3,7 +3,7 @@ description: A man, male-aligned, or non-binary person attracted to other men, m
 links:
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#cinthean
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - blue
   - purple
@@ -12,5 +12,5 @@ colors:
   - orange
   - white
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "6 hotizontal stripes. From top to bottom: navy blue, purple, red, light pink, light orange, white."

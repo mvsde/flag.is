@@ -1,4 +1,4 @@
-{% macro render_attributes(attributes = {}) %}
+{% macro renderAttributes(attributes = {}) %}
 	{% for key, value in attributes %}
 		{{ key }}="{{ value }}"
 	{% endfor %}
@@ -13,7 +13,7 @@
 			id="{{ id }}"
 			name="{{ name }}"
 			value="{{ value }}"
-			{{ render_attributes(attributes) }}
+			{{ renderAttributes(attributes) }}
 		>
 	</div>
 {% endmacro %}
@@ -31,7 +31,7 @@
 			id="{{ id }}"
 			name="{{ name }}"
 			value="{{ value }}"
-			{{ render_attributes(attributes) }}
+			{{ renderAttributes(attributes) }}
 		>
 		<label for="{{ id }}">
 			<span>{{ label|safe }}</span>

@@ -7,12 +7,12 @@ links:
     href: https://en.wikipedia.org/wiki/Lesbian
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#lesbian
-aspect_ratio: 1.77778
+aspectRatio: 1.77778
 colors:
   - red
   - orange
   - white
   - pink
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "5 horizontal stripes. From top to bottom: dark orange, light orange, white, light pink, dark pink."

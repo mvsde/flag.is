@@ -7,12 +7,12 @@ links:
     href: https://en.wikipedia.org/wiki/Gay_men
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#gay
-aspect_ratio: 1.66667
+aspectRatio: 1.66667
 colors:
   - green
   - white
   - blue
   - purple
 patterns:
-  - stripes_horizontal
+  - stripesHorizontal
 alt: "5 horizontal stripes. From top to bottom: teal, light green, white, light blue, dark blue."

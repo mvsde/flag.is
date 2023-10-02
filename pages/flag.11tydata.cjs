@@ -14,8 +14,8 @@ module.exports = {
 			`${data.flags[data.id].name} pride flag`,
 		social: {
 			image: (data) => `public/img/${data.id}.svg`,
-			image_alt: (data) => `${data.flags[data.id].name} flag`,
-			image_preset: "flag",
+			imageAlt: (data) => `${data.flags[data.id].name} flag`,
+			imagePreset: "flag",
 		},
 	},
 };
