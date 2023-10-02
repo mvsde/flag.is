@@ -3,7 +3,9 @@ $id: flag
 type: object
 required:
   - name
+  - description
   - aspectRatio
+  - alt
 additionalProperties: false
 properties:
   name:

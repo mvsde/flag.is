@@ -1,26 +1,17 @@
 {% set flag = flags[id] %}
-{% set alt = flag.name ~ " flag" %}
 
-{% if flag.alt %}
-	{% set alt = flag.name ~ " flag. " ~ flag.alt %}
-{% endif %}
-
-{% if flag.aliases or flag.description %}
-	<dl>
-		{% if flag.aliases %}
-			<div>
-				<dt>Also known as:</dt>
-				<dd>{{ flag.aliases|join(", ") }}</dd>
-			</div>
-		{% endif %}
-		{% if flag.description %}
-			<div>
-				<dt>Description:</dt>
-				<dd>{{ flag.description }}</dd>
-			</div>
-		{% endif %}
-	</dl>
-{% endif %}
+<dl>
+	{% if flag.aliases %}
+		<div>
+			<dt>Also known as:</dt>
+			<dd>{{ flag.aliases|join(", ") }}</dd>
+		</div>
+	{% endif %}
+	<div>
+		<dt>Description:</dt>
+		<dd>{{ flag.description }}</dd>
+	</div>
+</dl>
 
 <section>
 	<h2>Flag</h2>
@@ -28,7 +19,7 @@
 	{% set width = 300 %}
 	<img
 		src="/img/{{ id }}.svg"
-		alt="{{ alt }}"
+		alt="{{ flag.name }} flag. {{ flag.alt }}"
 		width="{{ width }}"
 		height="{{ (width / flag.aspectRatio)|round }}"
 	>
