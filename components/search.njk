@@ -64,6 +64,7 @@
 					data-patterns="{{ flag.patterns }}"
 				>
 					{% set width = 131 %}
+					{% set descriptionID = id ~ "-flag-description" %}
 					<img
 						class="Search-itemFlag"
 						src="/img/{{ id }}.svg"
@@ -71,13 +72,13 @@
 						width="{{ width }}"
 						height="{{ (width / flag.aspect_ratio)|round }}"
 						loading="lazy"
-						{% if flag.flagAlt %}
-						aria-describedby="{{ id }}-flag-description"
+						{% if flag.alt %}
+							aria-describedby="{{ descriptionID }}"
 						{% endif %}
 					>
 					<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
-					{% if flag.flagAlt %}
-					<p hidden id="{{ id }}-flag-description">{{ flag.flagAlt }}</p>
+					{% if flag.alt %}
+						<p id="{{ descriptionID }}" hidden>{{ flag.alt }}</p>
 					{% endif %}
 				</li>
 			{% endfor %}

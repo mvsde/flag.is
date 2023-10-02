@@ -16,4 +16,4 @@ colors:
   - black
 patterns:
   - stripes_horizontal
-flagAlt: "4 horizontal stripes. From top to bottom: yellow, white, purple, black."
+alt: "4 horizontal stripes. From top to bottom: yellow, white, purple, black."

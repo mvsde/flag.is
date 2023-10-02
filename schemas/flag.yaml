@@ -60,3 +60,5 @@ properties:
         - stripes_horizontal
         - stripes_vertical
         - symbol
+  alt:
+    type: string

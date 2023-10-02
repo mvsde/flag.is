@@ -14,4 +14,4 @@ colors:
 patterns:
   - stripes_horizontal
   - symbol
-flagAlt: "Horizontal stripes alternate between black and blue, with one white stripe in the middle. A red heart is in the top left corner."
+alt: Horizontal stripes alternate between black and blue, with one white stripe in the middle. A red heart is in the top left corner.

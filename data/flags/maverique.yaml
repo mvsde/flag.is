@@ -10,4 +10,4 @@ colors:
   - orange
 patterns:
   - stripes_horizontal
-flagAlt: "3 horizontal stripes. From top to bottom: yellow, white, orange."
+alt: "3 horizontal stripes. From top to bottom: yellow, white, orange."

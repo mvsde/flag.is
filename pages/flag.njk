@@ -1,7 +1,8 @@
 {% set flag = flags[id] %}
-{% set flagAlt = flag.name + " flag" %}
-{% if flag.flagAlt %}
-{% set flagAlt = flag.name + " flag. " + flag.flagAlt %}
+{% set alt = flag.name ~ " flag" %}
+
+{% if flag.alt %}
+	{% set alt = flag.name ~ " flag. " ~ flag.alt %}
 {% endif %}
 
 {% if flag.aliases or flag.description %}
@@ -27,7 +28,7 @@
 	{% set width = 300 %}
 	<img
 		src="/img/{{ id }}.svg"
-		alt="{{ flagAlt }}"
+		alt="{{ alt }}"
 		width="{{ width }}"
 		height="{{ (width / flag.aspect_ratio)|round }}"
 	>
