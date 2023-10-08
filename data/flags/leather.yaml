@@ -9,7 +9,7 @@ aspectRatio: 1.5
 colors:
   - red
   - black
-  - black
+  - blue
   - white
 patterns:
   - stripesHorizontal

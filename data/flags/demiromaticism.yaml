@@ -9,7 +9,7 @@ aspectRatio: 1.66667
 colors:
   - black
   - white
-  - gray
+  - green
   - gray
 patterns:
   - stripesHorizontal

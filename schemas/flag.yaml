@@ -34,9 +34,9 @@ properties:
     type: number
   colors:
     type: array
+    uniqueItems: true
     items:
       type: string
-      uniqueItems: true
       enum:
         - black
         - blue
@@ -51,9 +51,9 @@ properties:
         - yellow
   patterns:
     type: array
+    uniqueItems: true
     items:
       type: string
-      uniqueItems: true
       enum:
         - chevron
         - lettering
