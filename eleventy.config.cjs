@@ -1,4 +1,4 @@
-const yaml = require("yaml");
+const YAML = require("yaml");
 const image = import("./image.js");
 
 const DIRECTORIES = {
@@ -21,7 +21,7 @@ module.exports = function (eleventyConfig) {
 	eleventyConfig.addPassthroughCopy({ public: "/" });
 
 	// Data
-	eleventyConfig.addDataExtension("yaml", (content) => yaml.parse(content));
+	eleventyConfig.addDataExtension("yaml", (content) => YAML.parse(content));
 	eleventyConfig.addGlobalData("layout", "default.njk");
 	eleventyConfig.addGlobalData("base", process.env.URL);
 

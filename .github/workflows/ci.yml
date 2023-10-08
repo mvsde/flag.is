@@ -8,7 +8,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: Check out repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: Set up Node.js
         uses: actions/setup-node@v3
         with:
@@ -19,5 +19,7 @@ jobs:
         run: npm run lint:css
       - name: Lint JS
         run: npm run lint:js
+      - name: Lint data
+        run: npm run lint:data
       - name: Lint format
         run: npm run lint:format

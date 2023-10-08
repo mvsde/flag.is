@@ -35,6 +35,7 @@ npm run lint
 # Run individual linters
 npm run lint:css
 npm run lint:js
+npm run lint:data
 npm run lint:format
 ```
 
