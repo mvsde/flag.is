@@ -1,0 +1,15 @@
+name: Bug report
+description: Report an issue with the website
+
+labels:
+  - bug
+
+assignees:
+  - mvsde
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the bug as detailed as possible and include steps to reproduce.

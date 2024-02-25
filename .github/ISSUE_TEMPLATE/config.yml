@@ -1,0 +1,8 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Mastodon
+    url: https://mastodon.social/@mvsde
+    about: General inquiries that might not belong on GitHub.
+  - name: Email
+    url: https://flag.is/imprint/
+    about: When there’s absolutely no other viable option.

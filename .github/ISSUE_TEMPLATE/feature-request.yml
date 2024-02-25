@@ -1,0 +1,15 @@
+name: Feature request
+description: Request or propose a new feature
+
+labels:
+  - enhancement
+
+assignees:
+  - mvsde
+
+body:
+  - type: textarea
+    id: description
+    attributes:
+      label: Description
+      description: Describe the feature as detailed as possible.

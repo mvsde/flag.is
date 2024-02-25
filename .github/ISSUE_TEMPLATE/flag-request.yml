@@ -1,0 +1,48 @@
+name: Flag request
+description: Request or propose a new flag
+
+labels:
+  - flag
+
+assignees:
+  - mvsde
+
+body:
+  - type: input
+    id: name
+    attributes:
+      label: Name
+      description: Name of the flag or concept the flag describes.
+    validations:
+      required: true
+
+  - type: input
+    id: aliases
+    attributes:
+      label: Aliases
+      description: Additional names the flag/concept might be known as.
+
+  - type: input
+    id: source
+    attributes:
+      label: Source
+      description: Link to the flag source, ideally an SVG image.
+    validations:
+      required: true
+
+  - type: textarea
+    id: alt
+    attributes:
+      label: Alternative text
+      description: Alternative text for the flag image. Be concise and accurate.
+
+  - type: textarea
+    id: links
+    attributes:
+      label: Links
+      description: Links that are helpful for visitors of the flag detail page.
+
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
