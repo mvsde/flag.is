@@ -1,6 +1,6 @@
 .Header {
-	background: var(--color-box);
-	color: var(--color-on-box);
+	background: var(--color-banner);
+	color: var(--color-on-banner);
 	padding-block: 1rem;
 }
 

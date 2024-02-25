@@ -22,8 +22,12 @@
 	<div
 		class="Input Input--checkbox"
 		style="
-			--foreground: {{ foreground }};
-			--background: {{ background }};
+			{% if foreground %}
+				--foreground: {{ foreground }};
+			{% endif %}
+			{% if background %}
+				--background: {{ background }};
+			{% endif %}
 		"
 	>
 		<input

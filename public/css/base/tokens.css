@@ -10,12 +10,20 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--color-background: hsl(0deg 0% 100%);
-		--color-text: hsl(0deg 0% 10%);
+		--color-background: hsl(200deg 30% 95%);
+		--color-text: hsl(200deg 10% 10%);
+
+		/* Banner */
+		--color-banner: hsl(200deg 20% 88%);
+		--color-on-banner: hsl(200deg 10% 5%);
 
 		/* Box */
-		--color-box: hsl(200deg 30% 95%);
+		--color-box: hsl(0deg 0% 100%);
 		--color-on-box: hsl(200deg 30% 20%);
+
+		/* Button */
+		--color-button: hsl(200deg 20% 40%);
+		--color-on-button: hsl(200deg 20% 98%);
 
 		/* Border */
 		--color-border-divider: hsl(200deg 30% 80%);
@@ -32,12 +40,20 @@
 
 @media (prefers-color-scheme: dark) {
 	:root {
-		--color-background: hsl(0deg 0% 0%);
-		--color-text: hsl(0deg 0% 90%);
+		--color-background: hsl(200deg 5% 5%);
+		--color-text: hsl(200deg 5% 90%);
+
+		/* Banner */
+		--color-banner: hsl(200deg 30% 20%);
+		--color-on-banner: hsl(200deg 20% 98%);
 
 		/* Box */
 		--color-box: hsl(200deg 30% 15%);
-		--color-on-box: hsl(200deg 30% 90%);
+		--color-on-box: hsl(200deg 20% 96%);
+
+		/* Button */
+		--color-button: hsl(200deg 20% 30%);
+		--color-on-button: hsl(200deg 20% 95%);
 
 		/* Border */
 		--color-border-divider: hsl(200deg 30% 20%);

@@ -37,8 +37,10 @@ label,
 }
 
 button {
+	background: var(--color-button);
 	border: var(--border-interactive);
 	border-radius: var(--border-radius);
+	color: var(--color-on-button);
 	padding-block: 0.75rem;
 	padding-inline: 1rem;
 }

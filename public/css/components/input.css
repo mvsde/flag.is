@@ -18,8 +18,10 @@
 }
 
 .Input--text input {
+	background: var(--color-box);
 	border: var(--border-interactive);
 	border-radius: var(--border-radius);
+	color: var(--color-on-box);
 	padding-block: 0.75rem;
 	padding-inline: 1rem;
 }
@@ -41,11 +43,11 @@
 }
 
 .Input--checkbox label::before {
-	background: var(--background);
+	background: var(--background, var(--color-box));
 	block-size: var(--size);
 	border: var(--border-interactive);
 	border-radius: var(--border-radius);
-	color: var(--foreground);
+	color: var(--foreground, var(--color-on-box));
 	content: "";
 	font-size: 1.75rem;
 	inline-size: var(--size);

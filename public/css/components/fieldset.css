@@ -1,7 +1,7 @@
 fieldset {
 	border: var(--border-divider);
 	border-radius: var(--border-radius);
-	padding: 1em;
+	padding: 1rem;
 }
 
 .Fieldset-columns {
