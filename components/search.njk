@@ -1,9 +1,15 @@
 {% import "input.njk" as input %}
 {% import "note.njk" as note %}
+{% from "skip-link.njk" import skip_link %}
 
 <div class="Search js-Search">
+	{{ skip_link(
+		target = "flags",
+		text = "Skip filters"
+	) }}
+
 	<form class="Search-form js-Search-form">
-		<h2>Filters</h2>
+		<h2 id="filters">Filters</h2>
 
 		{{ input.text(
 			label = "Name",
@@ -54,7 +60,7 @@
 	</form>
 
 	<div class="Search-flags">
-		<h2>Flags</h2>
+		<h2 id="flags">Flags</h2>
 
 		<ul class="Search-list">
 			{% for id, flag in flags %}

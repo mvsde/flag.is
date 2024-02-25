@@ -13,7 +13,9 @@
 @import url("./components/note.css") layer(components);
 @import url("./components/rich-text.css") layer(components);
 @import url("./components/search.css") layer(components);
+@import url("./components/skip-link.css") layer(components);
 
 /* Utilities */
 @import url("./utilities/container.css") layer(utilities);
 @import url("./utilities/display.css") layer(utilities);
+@import url("./utilities/visually-hidden.css") layer(utilities);
