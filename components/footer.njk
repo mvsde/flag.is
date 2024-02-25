@@ -1,7 +1,21 @@
 <footer class="Footer">
-	<div class="u-container">
-		<a href="/" class="js-Back">Home</a> ·
-		<a href="/imprint/">Imprint</a> ·
-		<a href="{{ config.repository }}">GitHub</a>
-	</div>
+	<nav class="u-container" aria-label="Service">
+		<ul class="Footer-list">
+			<li>
+				<a href="/" class="js-Back">Home</a>
+			</li>
+			<li>
+				<a href="/imprint/">Imprint</a>
+			</li>
+			<li>
+				<a href="{{ config.repository }}">Source</a>
+			</li>
+			<li>
+				<a href="{{ config.repository }}/issues/new?template=flag-request.yml&assignee=mvsde&labels=flag" target="_blank">Request flag</a>
+			</li>
+			<li>
+				<a href="{{ config.repository }}/issues/new?template=bug-report.yml&assignee=mvsde&labels=flag" target="_blank">Report bug</a>
+			</li>
+		</ul>
+	</nav>
 </footer>
