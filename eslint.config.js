@@ -6,7 +6,6 @@ import simpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 
 /** @type {import("eslint").Linter.FlatConfig[]} */
-// @ts-expect-error
 export default [
 	js.configs.recommended,
 	prettier,
