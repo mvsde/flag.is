@@ -1,0 +1,15 @@
+name: Aroflux
+aliases:
+  - Aromantic flux
+description: Fluctuating romantic orientation on the aromantic spectrum.
+links:
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#aroflux
+aspectRatio: 1.66667
+colors:
+  - red
+  - pink
+  - green
+patterns:
+  - stripesHorizontal
+alt: "5 horizontal stripes. From top to bottom: red, dark pink, redish-green, darker green, lighter green."
