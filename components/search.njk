@@ -78,13 +78,14 @@
 					data-patterns="{{ flag.patterns }}"
 				>
 					{% set width = 178 %}
+					{% set height = (width / flag.aspectRatio)|round %}
 					{% set descriptionID = id ~ "-flag-description" %}
 					<img
 						class="Search-itemFlag"
 						src="/img/{{ id }}.svg"
 						alt="{{ flag.name }} flag"
 						width="{{ width }}"
-						height="{{ (width / flag.aspectRatio)|round }}"
+						height="{{ height }}"
 						loading="lazy"
 						aria-describedby="{{ descriptionID }}"
 					>

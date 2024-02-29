@@ -16,13 +16,20 @@
 <section>
 	<h2>Flag</h2>
 
-	{% set width = 300 %}
-	<img
-		src="/img/{{ id }}.svg"
-		alt="{{ flag.name }} flag. {{ flag.alt }}"
-		width="{{ width }}"
-		height="{{ (width / flag.aspectRatio)|round }}"
-	>
+	<p>
+		{% set width = 300 %}
+		{% set height = (width / flag.aspectRatio)|round %}
+		<img
+			src="/img/{{ id }}.svg"
+			alt="{{ flag.name }} flag. {{ flag.alt }}"
+			width="{{ width }}"
+			height="{{ height }}"
+		>
+	</p>
+
+	<p>
+		<a href="/img/{{ id }}.svg" download="{{ flag.name }}">Download flag</a>
+	</p>
 </section>
 
 {% if flag.links %}
