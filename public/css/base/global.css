@@ -45,24 +45,6 @@ button {
 	padding-inline: 1rem;
 }
 
-a {
-	color: currentcolor;
-}
-
-ul:not([class]) {
-	padding-inline-start: 1rem;
-}
-
-dl:not([class]) {
-	display: grid;
-	gap: 1rem;
-
-	& dt {
-		font-size: 0.875rem;
-		margin-block-end: 0.125rem;
-	}
-}
-
 img {
 	block-size: auto;
 	max-inline-size: 100%;

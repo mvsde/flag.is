@@ -10,11 +10,11 @@
 
 @media (prefers-color-scheme: light) {
 	:root {
-		--color-background: hsl(200deg 30% 95%);
+		--color-background: hsl(0deg 0% 100%);
 		--color-text: hsl(200deg 10% 10%);
 
 		/* Banner */
-		--color-banner: hsl(200deg 20% 88%);
+		--color-banner: hsl(200deg 20% 90%);
 		--color-on-banner: hsl(200deg 10% 5%);
 
 		/* Box */
