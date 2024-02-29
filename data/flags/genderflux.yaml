@@ -1,0 +1,17 @@
+name: Genderflux
+description: Fluctuating gender with extreme to modest fluctuations that may happen randomly.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Genderflux
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#genderflux
+aspectRatio: 1.66667
+colors:
+  - red
+  - pink
+  - gray
+  - blue
+  - yellow
+patterns:
+  - stripesHorizontal
+alt: "6 horizontal stripes. From top to bottom: pink, lighter pink, gray, lighter blue, blue, yellow."
