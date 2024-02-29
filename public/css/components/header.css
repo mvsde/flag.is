@@ -1,9 +1,0 @@
-.Header {
-	background: var(--color-banner);
-	color: var(--color-on-banner);
-	padding-block: 1rem;
-}
-
-.Header-logo {
-	font-weight: 700;
-}

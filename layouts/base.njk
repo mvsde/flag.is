@@ -34,9 +34,11 @@
 		{% endif %}
 	</head>
 	<body>
-		{% include "header.njk" %}
-
 		<main class="u-container">
+			{% if not isHome %}
+				<a class="js-Back" href="/">Back</a>
+			{% endif %}
+
 			{% if title %}
 				<h1>{{ title }}</h1>
 			{% endif %}
