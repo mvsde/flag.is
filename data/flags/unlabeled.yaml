@@ -1,0 +1,19 @@
+name: Unlabeled
+aliases:
+  - no-label
+  - non-labeled
+description: A person who doesn’t label their gender or sexuality.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Unlabeled
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#unlabeled
+aspectRatio: 1.66667
+colors:
+  - green
+  - white
+  - blue
+  - orange
+patterns:
+  - stripesHorizontal
+alt: "4 horizontal stripes. From top to bottom: light green, white, light blue, light orange."
