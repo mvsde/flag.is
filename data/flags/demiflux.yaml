@@ -1,0 +1,17 @@
+name: Demiflux
+description: One static gender and any others fluctuate in intensity.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Demigender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#demiflux
+aspectRatio: 1.66667
+colors:
+  - black
+  - gray
+  - pink
+  - yellow
+  - blue
+patterns:
+  - stripesHorizontal
+alt: "7 horizontal stripes. From top to bottom: gray, light gray, light pink, yellow, light blue, light gray, gray."
