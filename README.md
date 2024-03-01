@@ -1,6 +1,6 @@
 # flag.is
 
-A website to filter pride flags based on colors and patterns, available at [flag.is](https://flag.is).
+A website for identifying pride flags based on color and shape, available at [flag.is](https://flag.is).
 
 ## Contributing
 

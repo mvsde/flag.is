@@ -1,5 +1,4 @@
 import js from "@eslint/js";
-import prettier from "eslint-config-prettier";
 import nodeModule from "eslint-plugin-n/configs/recommended-module.js";
 import nodeScript from "eslint-plugin-n/configs/recommended-script.js";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
@@ -8,7 +7,6 @@ import globals from "globals";
 /** @type {import("eslint").Linter.FlatConfig[]} */
 export default [
 	js.configs.recommended,
-	prettier,
 
 	{
 		ignores: ["build"],
