@@ -65,4 +65,4 @@ To add a flag, create the following two files, where `[id]` is the URL-safe lowe
 
 The mandatory and optional properties for the YAML data file are specified in the [flag JSON schema](schemas/flag.yaml).
 
-The flag image file is an optimized SVG, but multiline and indented for readability. Use [SVGOMG](https://jakearchibald.github.io/svgomg/) for minification.
+The flag image file should be an optimized SVG that uses basic shapes to improve readability and reusability.
