@@ -1,0 +1,19 @@
+name: Gender questioning
+description: Process of discovering and questioning one’s gender identity.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Questioning
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#gender%20questioning
+aspectRatio: 1.66667
+colors:
+  - pink
+  - red
+  - purple
+  - green
+  - gray
+  - yellow
+  - blue
+patterns:
+  - stripesHorizontal
+alt: "9 horizontal stripes of varying height. From top to bottom: big pink, small red, medium purple, medium lime green, big gray, medium yellow, medium light blue, small blue, big desaturated green."
