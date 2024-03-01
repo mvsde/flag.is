@@ -1,0 +1,15 @@
+name: Multigender
+description: Someone who experiences more than one gender. Used as an umbrella term for any gender that involves more than one gender at a time.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Multigender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#multigender
+aspectRatio: 1.66667
+colors:
+  - purple
+  - blue
+  - orange
+patterns:
+  - stripesHorizontal
+alt: "5 horizontal stripes. From top to bottom: purple, blue, orange, blue, purple."
