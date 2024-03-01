@@ -1,0 +1,22 @@
+name: Demifluid
+description: A partially fluid gender identity. Can also mean one fluid gender and any others are static.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Demigender
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#demifluid
+aspectRatio: 1.66667
+colors:
+  - black
+  - gray
+  - red
+  - pink
+  - orange
+  - yellow
+  - green
+  - blue
+  - purple
+  - white
+patterns:
+  - stripesHorizontal
+alt: "7 horizontal stripes. From top to bottom: gray, light gray, light rainbow gradient, white, light rainbow gradient, light gray, gray."
