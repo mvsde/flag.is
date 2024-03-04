@@ -27,6 +27,12 @@ properties:
       properties:
         title:
           type: string
+          enum:
+            - Wikipedia
+            - Wiktionary
+            - LGBTQIA+ Wiki
+            - Library.LGBT
+            - Pronouns.page
         href:
           type: string
           format: uri-reference

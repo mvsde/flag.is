@@ -3,6 +3,8 @@ description: Represents the Disability Pride movement.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Disability_Pride_Month
+  - title: Wiktionary
+    href: https://en.wiktionary.org/wiki/disability
 aspectRatio: 1.33333
 colors:
   - green

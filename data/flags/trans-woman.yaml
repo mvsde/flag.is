@@ -1,13 +1,20 @@
 name: Trans woman
 aliases:
   - Transgender woman
+  - Transfeminine
+  - Transfemme
   - Male to female
   - MTF
-  - Trans femme
 description: A woman whose gender assigned at birth is different than their actual gender.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Transgender
+  - title: Wiktionary
+    href: https://en.wiktionary.org/wiki/trans_woman
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Transfeminine
+  - title: Library.LGBT
+    href: https://flag.library.lgbt/flags/transfeminine/
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#trans%20woman
 aspectRatio: 1.66667

@@ -1,12 +1,20 @@
 name: Trans man
 aliases:
   - Transgender man
+  - Transmasculine
+  - Transmasc
   - Female to male
   - FTM
 description: A man whose gender assigned at birth is different than their actual gender.
 links:
   - title: Wikipedia
     href: https://en.wikipedia.org/wiki/Transgender
+  - title: Wiktionary
+    href: https://en.wiktionary.org/wiki/trans_man
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Transmasculine
+  - title: Library.LGBT
+    href: https://flag.library.lgbt/flags/transmasculine/
   - title: Pronouns.page
     href: https://en.pronouns.page/terminology#trans%20man
 aspectRatio: 1.66667
