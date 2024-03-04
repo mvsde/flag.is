@@ -21,7 +21,7 @@ dl:not([class]) {
 	display: grid;
 	gap: 1rem;
 
-	& dt {
+	dt {
 		font-size: 0.875rem;
 		margin-block-end: 0.125rem;
 	}
