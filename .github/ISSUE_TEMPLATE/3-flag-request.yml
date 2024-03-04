@@ -31,12 +31,6 @@ body:
       required: true
 
   - type: textarea
-    id: alt
-    attributes:
-      label: Alternative text
-      description: Alternative text for the flag image. Be concise and accurate.
-
-  - type: textarea
     id: links
     attributes:
       label: Links
