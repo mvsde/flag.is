@@ -1,7 +1,7 @@
 # Build
 
 [build]
-  command = "npm run build"
+  command = "node --run build"
   publish = "build"
 
 # Redirects

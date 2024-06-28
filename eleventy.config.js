@@ -1,7 +1,8 @@
-const YAML = require("yaml");
-const image = import("./image.js");
+import YAML from "yaml";
 
-const DIRECTORIES = {
+import { generateImage } from "./image.js";
+
+export const DIRECTORIES = {
 	// Relative to current directory.
 	input: "pages",
 	output: "build",
@@ -13,9 +14,9 @@ const DIRECTORIES = {
 };
 
 /**
- * @param {import("@11ty/eleventy/src/UserConfig")} eleventyConfig Eleventy configuration
+ * @param {import("@11ty/eleventy/src/UserConfig").default} eleventyConfig
  */
-module.exports = function (eleventyConfig) {
+export default function (eleventyConfig) {
 	// Copy
 	eleventyConfig.setServerPassthroughCopyBehavior("passthrough");
 	eleventyConfig.addPassthroughCopy({ public: "/" });
@@ -27,13 +28,11 @@ module.exports = function (eleventyConfig) {
 
 	// Shortcodes
 	eleventyConfig.addShortcode("image", async (inputPath, preset) =>
-		(await image).generateImage(inputPath, preset),
+		generateImage(inputPath, preset),
 	);
 
 	return {
 		dir: DIRECTORIES,
 		markdownTemplateEngine: "njk",
 	};
-};
-
-module.exports.DIRECTORIES = DIRECTORIES;
+}

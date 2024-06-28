@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	layout: "rich-text.njk",
 	pagination: {
 		data: "flags",

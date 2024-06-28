@@ -1,4 +1,4 @@
-module.exports = {
+export default {
 	description: "Filter pride flags based on colors and patterns.",
 	social: {
 		image: "img/default.social.png",

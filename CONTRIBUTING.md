@@ -17,32 +17,32 @@ npm install
 ## Development
 
 ```sh
-npm run dev
+node --run dev
 ```
 
 ## Formatting
 
 ```sh
-npm run format
+node --run format
 ```
 
 ## Linting
 
 ```sh
 # Run all linters
-npm run lint
+node --run lint
 
 # Run individual linters
-npm run lint:css
-npm run lint:js
-npm run lint:data
-npm run lint:format
+node --run lint:css
+node --run lint:js
+node --run lint:data
+node --run lint:format
 ```
 
 ## Production
 
 ```sh
-npm run build
+node --run build
 ```
 
 ## Edit a flag

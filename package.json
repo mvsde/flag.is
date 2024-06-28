@@ -4,8 +4,8 @@
 	"private": true,
 	"type": "module",
 	"scripts": {
-		"dev": "NODE_ENV=development URL=http://localhost:8080 eleventy --incremental --serve",
-		"build": "NODE_ENV=production URL=$URL eleventy",
+		"dev": "URL=http://localhost:8080 eleventy --incremental --serve",
+		"build": "ENV=production URL=$URL eleventy",
 		"format": "prettier --write .",
 		"lint": "concurrently --raw --max-processes=1 npm:lint:*",
 		"lint:css": "stylelint --ignore-path .gitignore **/*.css",
@@ -14,22 +14,22 @@
 		"lint:format": "prettier --check ."
 	},
 	"devDependencies": {
-		"@11ty/eleventy": "^2.0.1",
-		"@eslint/js": "^8.57.0",
-		"ajv": "^8.12.0",
-		"ajv-formats": "^3.0.0-rc.0",
+		"@11ty/eleventy": "^3.0.0-alpha.14",
+		"@eslint/js": "^9.5.0",
+		"ajv": "^8.16.0",
+		"ajv-formats": "^3.0.1",
 		"chalk": "^5.3.0",
 		"concurrently": "^8.2.2",
-		"eslint": "^8.57.0",
-		"eslint-plugin-n": "^16.6.2",
-		"eslint-plugin-simple-import-sort": "^12.0.0",
-		"glob": "^10.3.10",
-		"globals": "^14.0.0",
-		"prettier": "^3.2.5",
-		"sharp": "^0.33.3",
-		"stylelint": "^16.3.0",
-		"stylelint-config-standard": "^36.0.0",
+		"eslint": "^9.5.0",
+		"eslint-plugin-n": "^17.9.0",
+		"eslint-plugin-simple-import-sort": "^12.1.0",
+		"glob": "^10.4.2",
+		"globals": "^15.6.0",
+		"prettier": "^3.3.2",
+		"sharp": "^0.33.4",
+		"stylelint": "^16.6.1",
+		"stylelint-config-standard": "^36.0.1",
 		"stylelint-order": "^6.0.4",
-		"yaml": "^2.4.1"
+		"yaml": "^2.4.5"
 	}
 }
