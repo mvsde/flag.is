@@ -3,7 +3,6 @@ import fs from "node:fs/promises";
 import Ajv from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
 import chalk from "chalk";
-import { glob } from "glob";
 import YAML from "yaml";
 
 /**
@@ -34,9 +33,10 @@ async function addSchema(file) {
  * @param {SchemaID} schemaID
  */
 async function validateData(filePattern, schemaID) {
-	const files = await glob(filePattern);
+	// eslint-disable-next-line n/no-unsupported-features/node-builtins
+	const files = await fs.glob(filePattern);
 
-	for (const file of files) {
+	for await (const file of files) {
 		const data = await loadFile(file);
 		ajv.validate(schemaID, data);
 		logErrors({ file, schemaID, errors: ajv.errors });
