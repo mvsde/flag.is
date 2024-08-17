@@ -22,3 +22,5 @@ colors:
 patterns:
   - stripesHorizontal
 alt: "7 horizontal stripes. From top to bottom: gray, light gray, light rainbow gradient, white, light rainbow gradient, light gray, gray."
+related:
+  - demigender

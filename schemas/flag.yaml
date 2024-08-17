@@ -70,3 +70,7 @@ properties:
         - symbol
   alt:
     type: string
+  related:
+    type: array
+    items:
+      type: string

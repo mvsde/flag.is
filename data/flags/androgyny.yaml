@@ -17,3 +17,5 @@ colors:
 patterns:
   - stripesHorizontal
 alt: "12 horizontal stripes. From top to bottom: gradient from darker purple to lighter purple."
+related:
+  - androgyne
