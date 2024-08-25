@@ -44,11 +44,12 @@ class Search extends HTMLElement {
 		this.#elements.items.forEach((item) => item.hide());
 
 		this.#elements.items
-			.filter(
-				(item) =>
-					item.name.toLowerCase().includes(name) ||
-					item.aliases.toLowerCase().includes(name),
-			)
+			.filter((item) => {
+				return (
+					Search.#normalizeString(item.name).includes(name) ||
+					Search.#normalizeString(item.aliases).includes(name)
+				);
+			})
 			.filter((item) => colors.isSubsetOf(item.colors))
 			.filter((item) => patterns.isSubsetOf(item.patterns))
 			.forEach((item) => item.show());
@@ -61,11 +62,19 @@ class Search extends HTMLElement {
 
 		const formData = new FormData(this.#elements.form);
 
-		const name = formData.get("name")?.toString().toLowerCase() ?? "";
+		const name = Search.#normalizeString(formData.get("name")?.toString());
 		const colors = new Set(formData.getAll("colors"));
 		const patterns = new Set(formData.getAll("patterns"));
 
 		return { name, colors, patterns };
+	}
+
+	/**
+	 * @param {string|undefined} string
+	 */
+	static #normalizeString(string) {
+		if (!string) return "";
+		return string.toLowerCase().replaceAll(/\W/g, "");
 	}
 }
 
@@ -73,11 +82,11 @@ class SearchItem extends HTMLElement {
 	constructor() {
 		super();
 
-		/** @type {string} */
-		this.name = this.dataset.name ?? "";
+		/** @type {string|undefined} */
+		this.name = this.dataset.name;
 
-		/** @type {string} */
-		this.aliases = this.dataset.aliases ?? "";
+		/** @type {string|undefined} */
+		this.aliases = this.dataset.aliases;
 
 		/** @type {Set<string>} */
 		this.colors = new Set(this.dataset.colors?.split(","));
