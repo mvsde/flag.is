@@ -1,0 +1,27 @@
+name: Gray aromanticism
+aliases:
+  - Grey aromanticism
+  - Grayaro
+  - Greyaro
+  - Gray romanticism
+  - Grey romanticism
+description: Spectrum between aromanticism and romantic attraction.
+links:
+  - title: Wiktionary
+    href: https://en.wiktionary.org/wiki/grayromantic
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Aromantic_spectrum#Grayromantic
+  - title: Library.LGBT
+    href: https://flag.library.lgbt/flags/greyromantic/
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology#grayaromantic
+aspectRatio: 1.66667
+colors:
+  - green
+  - gray
+  - white
+patterns:
+  - stripesHorizontal
+alt: "5 horizontal stripes. From top to bottom: green, gray, white, gray, green."
+related:
+  - aromanticism
