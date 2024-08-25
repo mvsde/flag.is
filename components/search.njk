@@ -2,14 +2,14 @@
 {% import "note.njk" as note %}
 {% from "skip-link.njk" import skip_link %}
 
-<div class="Search js-Search">
+<flag-search class="Search">
 	{{ skip_link(
 		target = "flags",
 		text = "Skip filters"
 	) }}
 
 	<form
-		class="Search-form js-Search-form"
+		class="Search-form"
 		aria-labelledby="filters"
 	>
 		<h2 id="filters">Filters</h2>
@@ -70,8 +70,9 @@
 
 		<ul class="Search-list" role="list">
 			{% for id, flag in flags %}
-				<li
-					class="Search-item js-Search-item"
+				<flag-search-item
+					role="listitem"
+					class="Search-item"
 					data-name="{{ flag.name }}"
 					data-aliases="{{ flag.aliases }}"
 					data-colors="{{ flag.colors }}"
@@ -91,7 +92,7 @@
 					>
 					<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
 					<p id="{{ descriptionID }}" hidden>{{ flag.alt }}</p>
-				</li>
+				</flag-search-item>
 			{% endfor %}
 		</ul>
 
@@ -100,4 +101,4 @@
 			text = "No flags match your filter combination. Please deselect filters or change your name search."
 		) }}
 	</section>
-</div>
+</flag-search>

@@ -1,56 +1,51 @@
 import { isArrayInArray } from "../utilities/array.js";
 
-const SELECTORS = {
-	container: ".js-Search",
-	form: ".js-Search-form",
-	item: ".js-Search-item",
-};
+class Search extends HTMLElement {
+	static #selectors = {
+		form: "form",
+		item: "flag-search-item",
+	};
 
-export class Search {
-	static selector = SELECTORS.container;
+	#elements;
 
-	/**
-	 * @param {HTMLElement} container
-	 */
-	constructor(container) {
-		this.elements = {
-			container,
+	constructor() {
+		super();
 
+		this.#elements = {
 			form: /** @type {HTMLFormElement|null} */ (
-				container.querySelector(SELECTORS.form)
+				this.querySelector(Search.#selectors.form)
 			),
 
-			items: /** @type {NodeListOf<HTMLLIElement>} */ (
-				container.querySelectorAll(SELECTORS.item)
-			),
+			items: /** @type {SearchItem[]} */ ([
+				...this.querySelectorAll(Search.#selectors.item),
+			]),
 		};
 
-		this.items = [...this.elements.items].map((item) => new Item(item));
-
-		this.addListeners();
+		this.#addListeners();
 	}
 
-	addListeners() {
-		if (!this.elements.form) {
+	#addListeners() {
+		if (!this.#elements.form) {
 			return;
 		}
 
-		this.elements.form.addEventListener("input", this.filter.bind(this));
+		this.#elements.form.addEventListener("input", this.#filter.bind(this));
 
-		this.elements.form.addEventListener("reset", () => {
+		this.#elements.form.addEventListener("reset", () => {
 			// Wait for the form data to actually refresh after resetting.
-			requestAnimationFrame(() => this.filter());
+			requestAnimationFrame(this.#filter.bind(this));
 		});
 
-		window.addEventListener("load", () => this.filter());
+		// Restore filtering after browser back navigation.
+		window.addEventListener("load", this.#filter.bind(this));
 	}
 
-	filter() {
-		const { name, colors, patterns } = this.getFormData();
+	#filter() {
+		const { name, colors, patterns } = this.#getFormData();
 
-		this.items.forEach((item) => item.hide());
+		this.#elements.items.forEach((item) => item.hide());
 
-		this.items
+		this.#elements.items
 			.filter(
 				(item) =>
 					item.name.toLowerCase().includes(name) ||
@@ -61,12 +56,12 @@ export class Search {
 			.forEach((item) => item.show());
 	}
 
-	getFormData() {
-		if (!this.elements.form) {
+	#getFormData() {
+		if (!this.#elements.form) {
 			return { name: "", colors: [], patterns: [] };
 		}
 
-		const formData = new FormData(this.elements.form);
+		const formData = new FormData(this.#elements.form);
 
 		const name = formData.get("name")?.toString().toLowerCase() ?? "";
 		const colors = formData.getAll("colors");
@@ -76,26 +71,24 @@ export class Search {
 	}
 }
 
-class Item {
-	/**
-	 * @param {HTMLLIElement} container
-	 */
-	constructor(container) {
-		this.elements = {
-			container,
-		};
+class SearchItem extends HTMLElement {
+	constructor() {
+		super();
 
-		this.name = container.dataset.name ?? "";
-		this.aliases = container.dataset.aliases ?? "";
-		this.colors = container.dataset.colors?.split(",");
-		this.patterns = container.dataset.patterns?.split(",");
+		this.name = this.dataset.name ?? "";
+		this.aliases = this.dataset.aliases ?? "";
+		this.colors = this.dataset.colors?.split(",");
+		this.patterns = this.dataset.patterns?.split(",");
 	}
 
 	hide() {
-		this.elements.container.hidden = true;
+		this.hidden = true;
 	}
 
 	show() {
-		this.elements.container.hidden = false;
+		this.hidden = false;
 	}
 }
+
+customElements.define("flag-search", Search);
+customElements.define("flag-search-item", SearchItem);

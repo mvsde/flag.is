@@ -37,7 +37,9 @@
 	<body>
 		<main class="u-container">
 			{% if not isHome %}
-				<a class="js-Back" href="/">Back</a>
+				<flag-back>
+					<a href="/">Back</a>
+				</flag-back>
 			{% endif %}
 
 			{% if title %}

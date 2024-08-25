@@ -2,7 +2,10 @@
 	"prerender": [
 		{
 			"where": {
-				"href_matches": "/*"
+				"and": [
+					{ "href_matches": "/*" },
+					{ "not": { "selector_matches": ".is-back" } }
+				]
 			},
 			"eagerness": "moderate"
 		}

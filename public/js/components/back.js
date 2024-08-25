@@ -1,38 +1,48 @@
-const SELECTORS = {
-	container: ".js-Back",
-};
+class Back extends HTMLElement {
+	static #selectors = {
+		link: "a",
+	};
 
-export class Back {
-	static selector = SELECTORS.container;
+	static #classes = {
+		isBack: "is-back",
+	};
 
-	/**
-	 * @param {HTMLAnchorElement} container
-	 */
-	constructor(container) {
-		this.elements = {
-			container,
+	#elements;
+
+	constructor() {
+		super();
+
+		this.#elements = {
+			link: /** @type {HTMLAnchorElement|null} */ (
+				this.querySelector(Back.#selectors.link)
+			),
 		};
 
-		this.addListeners();
+		if (this.#isReferredFromHomepage) {
+			this.#setClasses();
+			this.#addListeners();
+		}
 	}
 
-	addListeners() {
-		this.elements.container.addEventListener("click", this.onClick.bind(this));
+	#setClasses() {
+		this.#elements.link?.classList.add(Back.#classes.isBack);
+	}
+
+	#addListeners() {
+		this.#elements.link?.addEventListener("click", this.#onClick.bind(this));
 	}
 
 	/**
 	 * @param {PointerEvent} event
 	 */
-	onClick(event) {
-		if (!this.isReferredFromHomepage) {
-			return;
-		}
-
+	#onClick(event) {
 		event.preventDefault();
 		history.back();
 	}
 
-	get isReferredFromHomepage() {
-		return this.elements.container.href === document.referrer;
+	get #isReferredFromHomepage() {
+		return this.#elements.link?.href === document.referrer;
 	}
 }
+
+customElements.define("flag-back", Back);
