@@ -14,9 +14,9 @@ class Search extends HTMLElement {
 				this.querySelector(Search.#selectors.form)
 			),
 
-			items: /** @type {SearchItem[]} */ ([
-				...this.querySelectorAll(Search.#selectors.item),
-			]),
+			items: /** @type {SearchItem[]} */ (
+				Array.from(this.querySelectorAll(Search.#selectors.item))
+			),
 		};
 
 		this.#addListeners();
