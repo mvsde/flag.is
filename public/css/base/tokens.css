@@ -1,69 +1,38 @@
 :root {
+	/* Borders */
+
 	--border-divider: 0.0625rem solid var(--color-border-divider);
 	--border-interactive: 0.0625rem solid var(--color-border-interactive);
+
 	--border-radius: 0.25rem;
 
-	--outline-focus: 0.125rem solid var(--color-outline-focus);
+	/* Outlines */
+
+	--outline-focus: 0.125rem solid
+		light-dark(hsl(40deg 90% 50%), hsl(40deg 90% 50%));
+
+	/* Colors */
+
+	--color-background: light-dark(hsl(0deg 0% 100%), hsl(200deg 5% 5%));
+	--color-text: light-dark(hsl(200deg 10% 10%), hsl(200deg 5% 90%));
+
+	--color-banner: light-dark(hsl(200deg 20% 90%), hsl(200deg 30% 20%));
+	--color-on-banner: light-dark(hsl(200deg 10% 5%), hsl(200deg 20% 98%));
+
+	--color-box: light-dark(hsl(0deg 0% 100%), hsl(200deg 30% 15%));
+	--color-on-box: light-dark(hsl(200deg 30% 20%), hsl(200deg 20% 96%));
+
+	--color-button: light-dark(hsl(200deg 20% 40%), hsl(200deg 20% 30%));
+	--color-on-button: light-dark(hsl(200deg 20% 98%), hsl(200deg 20% 95%));
+
+	--color-border-divider: light-dark(hsl(200deg 30% 80%), hsl(200deg 30% 20%));
+	--color-border-interactive: light-dark(
+		hsl(200deg 30% 40%),
+		hsl(200deg 30% 40%)
+	);
+
+	--color-warning: light-dark(hsl(40deg 80% 80%), hsl(40deg 40% 20%));
+	--color-on-warning: light-dark(hsl(40deg 50% 10%), hsl(40deg 50% 90%));
 
 	color-scheme: light dark;
-}
-
-@media (prefers-color-scheme: light) {
-	:root {
-		--color-background: hsl(0deg 0% 100%);
-		--color-text: hsl(200deg 10% 10%);
-
-		/* Banner */
-		--color-banner: hsl(200deg 20% 90%);
-		--color-on-banner: hsl(200deg 10% 5%);
-
-		/* Box */
-		--color-box: hsl(0deg 0% 100%);
-		--color-on-box: hsl(200deg 30% 20%);
-
-		/* Button */
-		--color-button: hsl(200deg 20% 40%);
-		--color-on-button: hsl(200deg 20% 98%);
-
-		/* Border */
-		--color-border-divider: hsl(200deg 30% 80%);
-		--color-border-interactive: hsl(200deg 30% 40%);
-
-		/* Outline */
-		--color-outline-focus: hsl(40deg 90% 50%);
-
-		/* Status */
-		--color-warning: hsl(40deg 80% 80%);
-		--color-on-warning: hsl(40deg 50% 10%);
-	}
-}
-
-@media (prefers-color-scheme: dark) {
-	:root {
-		--color-background: hsl(200deg 5% 5%);
-		--color-text: hsl(200deg 5% 90%);
-
-		/* Banner */
-		--color-banner: hsl(200deg 30% 20%);
-		--color-on-banner: hsl(200deg 20% 98%);
-
-		/* Box */
-		--color-box: hsl(200deg 30% 15%);
-		--color-on-box: hsl(200deg 20% 96%);
-
-		/* Button */
-		--color-button: hsl(200deg 20% 30%);
-		--color-on-button: hsl(200deg 20% 95%);
-
-		/* Border */
-		--color-border-divider: hsl(200deg 30% 20%);
-		--color-border-interactive: hsl(200deg 30% 40%);
-
-		/* Outline */
-		--color-outline-focus: hsl(40deg 90% 50%);
-
-		/* Status */
-		--color-warning: hsl(40deg 40% 20%);
-		--color-on-warning: hsl(40deg 50% 90%);
-	}
 }
