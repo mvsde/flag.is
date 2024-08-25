@@ -1,5 +1,3 @@
-import { isArrayInArray } from "../utilities/array.js";
-
 class Search extends HTMLElement {
 	static #selectors = {
 		form: "form",
@@ -51,21 +49,21 @@ class Search extends HTMLElement {
 					item.name.toLowerCase().includes(name) ||
 					item.aliases.toLowerCase().includes(name),
 			)
-			.filter((item) => isArrayInArray(colors, item.colors))
-			.filter((item) => isArrayInArray(patterns, item.patterns))
+			.filter((item) => colors.isSubsetOf(item.colors))
+			.filter((item) => patterns.isSubsetOf(item.patterns))
 			.forEach((item) => item.show());
 	}
 
 	#getFormData() {
 		if (!this.#elements.form) {
-			return { name: "", colors: [], patterns: [] };
+			return { name: "", colors: new Set(), patterns: new Set() };
 		}
 
 		const formData = new FormData(this.#elements.form);
 
 		const name = formData.get("name")?.toString().toLowerCase() ?? "";
-		const colors = formData.getAll("colors");
-		const patterns = formData.getAll("patterns");
+		const colors = new Set(formData.getAll("colors"));
+		const patterns = new Set(formData.getAll("patterns"));
 
 		return { name, colors, patterns };
 	}
@@ -75,10 +73,17 @@ class SearchItem extends HTMLElement {
 	constructor() {
 		super();
 
+		/** @type {string} */
 		this.name = this.dataset.name ?? "";
+
+		/** @type {string} */
 		this.aliases = this.dataset.aliases ?? "";
-		this.colors = this.dataset.colors?.split(",");
-		this.patterns = this.dataset.patterns?.split(",");
+
+		/** @type {Set<string>} */
+		this.colors = new Set(this.dataset.colors?.split(","));
+
+		/** @type {Set<string>} */
+		this.patterns = new Set(this.dataset.patterns?.split(","));
 	}
 
 	hide() {
