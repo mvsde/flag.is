@@ -8,8 +8,9 @@
 
 		<title>{% if not isHome %}{{ title }} | {% endif %}flag.is</title>
 
-		<script type="module" src="/js/main.js"></script>
+		<script type="speculationrules">{% include "speculation-rules.json" %}</script>
 		<link rel="stylesheet" href="/css/main.css">
+		<script type="module" src="/js/main.js"></script>
 
 		{% if description %}
 			<meta name="description" content="{{ description }}">
