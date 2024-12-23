@@ -2,6 +2,8 @@ import YAML from "yaml";
 
 import { generateImage } from "./image.js";
 
+/** @import { UserConfig } from "@11ty/eleventy" */
+
 export const DIRECTORIES = {
 	// Relative to current directory.
 	input: "pages",
@@ -14,7 +16,7 @@ export const DIRECTORIES = {
 };
 
 /**
- * @param {import("@11ty/eleventy/src/UserConfig").default} eleventyConfig
+ * @param {UserConfig} eleventyConfig
  */
 export default function (eleventyConfig) {
 	// Copy

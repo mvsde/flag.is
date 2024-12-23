@@ -4,7 +4,9 @@ import nodeScript from "eslint-plugin-n/configs/recommended-script.js";
 import simpleImportSort from "eslint-plugin-simple-import-sort";
 import globals from "globals";
 
-/** @type {import("eslint").Linter.FlatConfig[]} */
+/** @import { Linter } from "eslint" */
+
+/** @type {Linter.Config[]} */
 export default [
 	js.configs.recommended,
 

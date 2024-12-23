@@ -1,0 +1,4 @@
+# Ignore unsupported file types, this significantly increases Prettier’s speed.
+
+*.njk
+*.svg
