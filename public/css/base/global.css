@@ -31,6 +31,7 @@ button {
 }
 
 button,
+summary,
 label,
 [type="checkbox"] {
 	cursor: pointer;
@@ -43,6 +44,11 @@ button {
 	color: var(--color-on-button);
 	padding-block: 0.75rem;
 	padding-inline: 1rem;
+}
+
+summary > * {
+	display: inline;
+	vertical-align: middle;
 }
 
 img {

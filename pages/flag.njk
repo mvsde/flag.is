@@ -28,7 +28,7 @@
 	</p>
 
 	<p>
-		<a href="/img/{{ id }}.svg" download="{{ flag.name }}">Download flag</a>
+		<a href="/img/{{ id }}.svg" download="{{ flag.name }}.svg">Download flag</a>
 	</p>
 </section>
 
@@ -41,30 +41,6 @@
 				<li>
 					<a href="{{ link.href }}">{{ link.title }}</a>
 				</li>
-			{% endfor %}
-		</ul>
-	</section>
-{% endif %}
-
-{% if flag.colors %}
-	<section>
-		<h2>Colors</h2>
-
-		<ul>
-			{% for color in flag.colors %}
-				<li>{{ colors[color].name }}</li>
-			{% endfor %}
-		</ul>
-	</section>
-{% endif %}
-
-{% if flag.patterns %}
-	<section>
-		<h2>Patterns</h2>
-
-		<ul>
-			{% for pattern in flag.patterns %}
-				<li>{{ patterns[pattern].name|safe }}</li>
 			{% endfor %}
 		</ul>
 	</section>
@@ -95,15 +71,45 @@
 	</section>
 {% endif %}
 
-<section>
-	<h2>Edit</h2>
+<details>
+	<summary>
+		<h2>Meta</h2>
+	</summary>
 
-	<ul>
-		<li>
-			<a href="{{ config.repository }}/edit/main/data/flags/{{ id }}.yaml">Edit metadata</a>
-		</li>
-		<li>
-			<a href="{{ config.repository }}/edit/main/public/img/{{ id }}.svg">Edit flag</a>
-		</li>
-	</ul>
-</section>
+	{% if flag.colors %}
+		<section>
+			<h3>Colors</h3>
+
+			<ul>
+				{% for color in flag.colors %}
+					<li>{{ colors[color].name }}</li>
+				{% endfor %}
+			</ul>
+		</section>
+	{% endif %}
+
+	{% if flag.patterns %}
+		<section>
+			<h3>Patterns</h3>
+
+			<ul>
+				{% for pattern in flag.patterns %}
+					<li>{{ patterns[pattern].name|safe }}</li>
+				{% endfor %}
+			</ul>
+		</section>
+	{% endif %}
+
+	<section>
+		<h3>Edit</h3>
+
+		<ul>
+			<li>
+				<a href="{{ config.repository }}/edit/main/data/flags/{{ id }}.yaml">Edit metadata</a>
+			</li>
+			<li>
+				<a href="{{ config.repository }}/edit/main/public/img/{{ id }}.svg">Edit flag</a>
+			</li>
+		</ul>
+	</section>
+</details>
