@@ -13,3 +13,5 @@ colors:
 patterns:
   - stripesHorizontal
 alt: "3 horizontal stripes. From top to bottom: yellow, white, orange."
+related:
+  - non-binary

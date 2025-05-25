@@ -1,10 +1,11 @@
 .RichText {
-	section {
-		margin-block: 2rem;
+	h2,
+	details {
+		margin-block: 2rem 1rem;
 	}
 
-	h2 {
-		margin-block: 0.5rem 1rem;
+	h3 {
+		margin-block: 1rem 0.75rem;
 	}
 
 	p {

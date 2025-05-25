@@ -46,29 +46,30 @@
 	</section>
 {% endif %}
 
-{% if flag.related %}
-	<section>
-		<h2>Related</h2>
+{% if categories %}
+	<h2>Related</h2>
+
+	{% for category in categories %}
+		<h3>{{ category.name }}</h3>
 
 		<ul class="Search-list">
-			{% for relatedID in flag.related %}
-				{% set relatedFlag = flags[relatedID] %}
+			{% for relatedFlag in category.flags %}
 				{% set relatedWidth = 178 %}
 				{% set relatedHeight = (relatedWidth / relatedFlag.aspectRatio)|round %}
 				<li class="Search-item">
 					<img
 						class="Search-itemFlag"
-						src="/img/{{ relatedID }}.svg"
+						src="/img/{{ relatedFlag.id }}.svg"
 						alt="{{ relatedFlag.name }} flag"
 						width="{{ relatedWidth }}"
 						height="{{ relatedHeight }}"
 						loading="lazy"
 					>
-					<a class="Search-itemLink" href="/{{ relatedID }}/">{{ relatedFlag.name }}</a>
+					<a class="Search-itemLink" href="{{ relatedFlag.url }}">{{ relatedFlag.name }}</a>
 				</li>
 			{% endfor %}
 		</ul>
-	</section>
+	{% endfor %}
 {% endif %}
 
 <details>
