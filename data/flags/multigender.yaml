@@ -1,4 +1,6 @@
 name: Multigender
+aliases:
+  - Omnigender
 description: Someone who experiences more than one gender. Used as an umbrella term for any gender that involves more than one gender at a time.
 links:
   - title: Wiktionary
@@ -16,4 +18,4 @@ patterns:
   - stripesHorizontal
 alt: "5 horizontal stripes. From top to bottom: purple, blue, orange, blue, purple."
 related:
-  - gender-fluidity
+  - polygender

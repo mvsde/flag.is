@@ -1,0 +1,27 @@
+name: Polygender
+aliases:
+  - Omnigender
+description: More than one gender identity in any number of combinations, as long as it is more than one at a time.
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Polygender
+  - title: Wiktionary
+    href: https://en.wiktionary.org/wiki/polygender
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Polygender
+  - title: Library.LGBT
+    href: https://flag.library.lgbt/flags/polygender/
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology?filter=polygender
+aspectRatio: 1.66667
+colors:
+  - black
+  - gray
+  - pink
+  - yellow
+  - blue
+patterns:
+  - stripesHorizontal
+alt: "5 horizontal stripes. From top to bottom: black, gray, pink, yellow, light blue."
+related:
+  - polygender

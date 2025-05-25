@@ -1,6 +1,5 @@
 name: Pangender
 aliases:
-  - Polygender
   - Omnigender
 description: Multiple or all gender identities.
 links:
@@ -24,4 +23,4 @@ patterns:
   - stripesHorizontal
 alt: 7 horizontal stripes fade from pastel yellow, to pastel pink, to white, to pastel pink, to pastel yellow.
 related:
-  - gender-fluidity
+  - polygender
