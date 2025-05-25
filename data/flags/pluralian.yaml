@@ -2,7 +2,7 @@ name: Pluralian
 description: Attraction towards more than one gender.
 links:
   - title: Pronouns.page
-    href: https://en.pronouns.page/terminology#pluralian
+    href: https://en.pronouns.page/terminology?filter=pluralian
 aspectRatio: 1.66667
 colors:
   - green
