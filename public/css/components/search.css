@@ -29,7 +29,7 @@
 	list-style: none;
 }
 
-.Search-item {
+.Search-itemLink {
 	display: flex;
 	flex-direction: column;
 	gap: 0.75rem;

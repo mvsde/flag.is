@@ -70,6 +70,9 @@
 
 		<ul class="Search-list" role="list">
 			{% for id, flag in flags %}
+				{% set width = 178 %}
+				{% set height = (width / flag.aspectRatio)|round %}
+
 				<flag-search-item
 					role="listitem"
 					class="Search-item"
@@ -78,20 +81,22 @@
 					data-colors="{{ flag.colors }}"
 					data-patterns="{{ flag.patterns }}"
 				>
-					{% set width = 178 %}
-					{% set height = (width / flag.aspectRatio)|round %}
-					{% set descriptionID = id ~ "-flag-description" %}
-					<img
-						class="Search-itemFlag"
-						src="/img/{{ id }}.svg"
-						alt="{{ flag.name }} flag"
-						width="{{ width }}"
-						height="{{ height }}"
-						loading="lazy"
-						aria-describedby="{{ descriptionID }}"
+					<a
+						class="Search-itemLink"
+						href="/{{ id }}/"
+						aria-label="{{ flag.name }}"
 					>
-					<a class="Search-itemLink" href="/{{ id }}/">{{ flag.name }}</a>
-					<p id="{{ descriptionID }}" hidden>{{ flag.alt }}</p>
+						<img
+							class="Search-itemFlag"
+							src="/img/{{ id }}.svg"
+							alt="{{ flag.name }} flag"
+							width="{{ width }}"
+							height="{{ height }}"
+							loading="lazy"
+							aria-description="{{ flag.alt }}"
+						>
+						{{ flag.name }}
+					</a>
 				</flag-search-item>
 			{% endfor %}
 		</ul>

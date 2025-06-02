@@ -34,6 +34,7 @@ export default {
 						name: data.flags[item.data.id].name,
 						url: item.page.url,
 						aspectRatio: data.flags[item.data.id].aspectRatio,
+						alt: data.flags[item.data.id].alt,
 					})),
 			}));
 		},

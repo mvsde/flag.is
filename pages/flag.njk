@@ -56,16 +56,24 @@
 			{% for relatedFlag in category.flags %}
 				{% set relatedWidth = 178 %}
 				{% set relatedHeight = (relatedWidth / relatedFlag.aspectRatio)|round %}
+
 				<li class="Search-item">
-					<img
-						class="Search-itemFlag"
-						src="/img/{{ relatedFlag.id }}.svg"
-						alt="{{ relatedFlag.name }} flag"
-						width="{{ relatedWidth }}"
-						height="{{ relatedHeight }}"
-						loading="lazy"
+					<a
+						class="Search-itemLink"
+						href="{{ relatedFlag.url }}"
+						aria-label="{{ relatedFlag.name }}"
 					>
-					<a class="Search-itemLink" href="{{ relatedFlag.url }}">{{ relatedFlag.name }}</a>
+						<img
+							class="Search-itemFlag"
+							src="/img/{{ relatedFlag.id }}.svg"
+							alt="{{ relatedFlag.name }} flag"
+							width="{{ relatedWidth }}"
+							height="{{ relatedHeight }}"
+							loading="lazy"
+							aria-description="{{ relatedFlag.alt }}"
+						>
+						{{ relatedFlag.name }}
+					</a>
 				</li>
 			{% endfor %}
 		</ul>
