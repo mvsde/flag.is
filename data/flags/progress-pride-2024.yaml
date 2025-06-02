@@ -1,0 +1,23 @@
+name: Progress pride (2024)
+aliases:
+  - Disability-inclusive progress pride
+description: Rainbow flag with additional colors for Black, Brown, indigenous, trans, intersex, and disabled people.
+aspectRatio: 1.5748
+colors:
+  - black
+  - blue
+  - brown
+  - gray
+  - orange
+  - pink
+  - purple
+  - red
+  - white
+  - yellow
+patterns:
+  - chevron
+  - stripesHorizontal
+  - symbol
+alt: 6 rainbow horizontal stripes. In the left third, a large chevron points right, comprised of a yellow stripe with a purple ring reminiscent of the intersex pride flag, and 5 stripes horizontally divided into pastel colors pink, yellow, light gray, light blue, and light green of the disability pride flag and black, brown, light blue, light pink, and white reminiscent of the transgender pride flag
+related:
+  - rainbow

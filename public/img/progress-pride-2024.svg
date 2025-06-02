@@ -12,6 +12,12 @@
 	<path fill="#f4aec8" d="M0 0h477l1764 1905L477 3810H0z" />
 	<path fill="#ffffff" d="M0 0h111l1764 1905L111 3810H0z" />
 
+	<path fill="#3bb07d" d="M0 0h1577l1764 1905L1577 1905H0z" />
+	<path fill="#7bc2e0" d="M0 0h1209l1764 1905L1209 1905H0z" />
+	<path fill="#e8e8e8" d="M0 0h844l1764 1905L844 1905H0z" />
+	<path fill="#eede77" d="M0 0h477l1764 1905L477 1905H0z" />
+	<path fill="#cf7280" d="M0 0h111l1764 1905L111 1905H0z" />
+
 	<path fill="#fdd817" d="m0 278 1507 1627L0 3532z" />
 	<circle stroke="#66338b" cx="556" cy="1905" r="404" fill="none" stroke-width="95" />
 </svg>
