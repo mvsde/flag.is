@@ -31,48 +31,31 @@
 .Input--checkbox {
 	--size: 1.625rem;
 
-	display: flex;
-}
-
-.Input--checkbox label {
 	align-items: center;
-	border-radius: var(--border-radius);
 	display: flex;
-	flex-grow: 1;
 	gap: 0.5rem;
 }
 
-.Input--checkbox label::before {
+.Input--checkbox input {
+	appearance: none;
 	background: var(--background, var(--color-box));
 	block-size: var(--size);
 	border: var(--border-interactive);
 	border-radius: var(--border-radius);
 	color: var(--foreground, var(--color-on-box));
+	inline-size: var(--size);
+	position: relative;
+}
+
+.Input--checkbox input:checked::before {
+	block-size: calc(var(--size) * 0.4);
+	border: 0.1875rem solid currentcolor;
+	border-block-start: none;
+	border-inline-end: none;
 	content: "";
-	font-size: 1.75rem;
-	inline-size: var(--size);
-	line-height: calc(var(--size) * 0.8);
-	text-align: center;
-}
-
-.Input--checkbox input:focus-visible + label {
-	outline: var(--outline-focus);
-	outline-offset: 0.25rem;
-}
-
-.Input--checkbox input:checked + label::before {
-	content: "×";
-}
-
-@supports (content: "" / "") {
-	.Input--checkbox input:checked + label::before {
-		content: "×" / "";
-	}
-}
-
-.Input--checkbox input {
-	block-size: var(--size);
-	inline-size: var(--size);
-	opacity: 0.01;
+	inline-size: calc(var(--size) * 0.7);
+	inset-block-start: 20%;
+	inset-inline-start: 15%;
 	position: absolute;
+	rotate: -48deg;
 }
