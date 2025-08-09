@@ -74,9 +74,7 @@ function logErrors({ file, schemaID, errors }) {
 		const errorIndex = pc.red(index++);
 		const errorDataPath = pc.cyan(error.instancePath);
 		const errorMessage = error.message;
-		const errorSchemaPath = pc.italic(
-			`schemas/${schemaID}.yaml${error.schemaPath}`,
-		);
+		const errorSchemaPath = pc.italic(`schemas/${schemaID}.yaml${error.schemaPath}`);
 
 		console.log(`  ${errorIndex} ${errorDataPath} ${errorMessage}`);
 		console.log(`    ${errorSchemaPath}`);

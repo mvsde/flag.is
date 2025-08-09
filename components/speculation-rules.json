@@ -4,7 +4,11 @@
 			"where": {
 				"and": [
 					{ "href_matches": "/*" },
-					{ "not": { "selector_matches": ".is-back" } }
+					{
+						"not": {
+							"selector_matches": ".is-back"
+						}
+					}
 				]
 			},
 			"eagerness": "moderate"

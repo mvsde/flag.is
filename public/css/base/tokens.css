@@ -8,8 +8,7 @@
 
 	/* Outlines */
 
-	--outline-focus: 0.1875rem solid
-		light-dark(hsl(40deg 90% 50%), hsl(40deg 90% 50%));
+	--outline-focus: 0.1875rem solid light-dark(hsl(40deg 90% 50%), hsl(40deg 90% 50%));
 
 	/* Colors */
 
@@ -26,10 +25,7 @@
 	--color-on-button: light-dark(hsl(200deg 20% 98%), hsl(200deg 20% 95%));
 
 	--color-border-divider: light-dark(hsl(200deg 30% 80%), hsl(200deg 30% 20%));
-	--color-border-interactive: light-dark(
-		hsl(200deg 30% 40%),
-		hsl(200deg 30% 40%)
-	);
+	--color-border-interactive: light-dark(hsl(200deg 30% 40%), hsl(200deg 30% 40%));
 
 	--color-warning: light-dark(hsl(40deg 80% 80%), hsl(40deg 40% 20%));
 	--color-on-warning: light-dark(hsl(40deg 50% 10%), hsl(40deg 50% 90%));
