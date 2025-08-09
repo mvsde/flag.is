@@ -2,7 +2,7 @@ import fs from "node:fs/promises";
 
 import Ajv from "ajv/dist/2020.js";
 import addFormats from "ajv-formats";
-import chalk from "chalk";
+import pc from "picocolors";
 import YAML from "yaml";
 
 /**
@@ -67,14 +67,14 @@ function logErrors({ file, schemaID, errors }) {
 	process.exitCode = 1;
 	let index = 1;
 
-	console.log(chalk.underline(file));
+	console.log(pc.underline(file));
 	console.log();
 
 	for (const error of errors) {
-		const errorIndex = chalk.red(index++);
-		const errorDataPath = chalk.cyan(error.instancePath);
+		const errorIndex = pc.red(index++);
+		const errorDataPath = pc.cyan(error.instancePath);
 		const errorMessage = error.message;
-		const errorSchemaPath = chalk.italic(
+		const errorSchemaPath = pc.italic(
 			`schemas/${schemaID}.yaml${error.schemaPath}`,
 		);
 
