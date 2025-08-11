@@ -1,0 +1,24 @@
+name: Puppy
+aliases:
+  - Animal
+  - Roleplay
+  - Pet
+  - Cat
+  - Kitten
+  - Dog
+description: Roleplay where at least one participant assumes a non-human form. May contain elements of BDSM which is often referred to as petplay.
+links:
+  - title: Wikipedia
+    href: https://en.wikipedia.org/wiki/Animal_roleplay
+  - title: Wiktionary
+    href: https://en.wiktionary.org/wiki/puppyplay
+aspectRatio: 1.66667
+colors:
+  - red
+  - black
+  - blue
+  - white
+patterns:
+  - diagonal
+  - symbol
+alt: "9 diagonal stripes oriented from top-left to bottom-right: Black, blue, black, blue, thicker white, blue, black, blue, black. In the center is a big red bone."
