@@ -1,0 +1,8 @@
+<svg viewBox="0 0 26 26" width="26" height="26" aria-hidden="true">
+	<mask id="icon-lettering-mask">
+		<rect width="26" height="26" fill="white" />
+		<text x="13" y="18" font-size="16" font-weight="600" text-anchor="middle">ab</text>
+	</mask>
+
+	<rect mask="url(#icon-lettering-mask)" width="26" height="26" fill="currentColor" />
+</svg>

@@ -12,7 +12,7 @@ colors:
   - orange
   - white
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "6 hotizontal stripes. From top to bottom: navy blue, purple, red, light pink, light orange, white."
 related:
   - gay

@@ -1,0 +1,8 @@
+<svg viewBox="0 0 26 26" width="26" height="26" aria-hidden="true">
+	<mask id="icon-chevron-mask">
+		<rect width="26" height="26" fill="white" />
+		<polygon points="8,5 20,13 8,21" />
+	</mask>
+
+	<rect mask="url(#icon-chevron-mask)" width="26" height="26" fill="currentColor" />
+</svg>

@@ -15,7 +15,7 @@ colors:
   - green
   - black
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "3 horizontal stripes. From top to bottom: white, green, black."
 related:
   - non-binary

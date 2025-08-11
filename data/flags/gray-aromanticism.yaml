@@ -21,7 +21,7 @@ colors:
   - gray
   - white
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "5 horizontal stripes. From top to bottom: green, gray, white, gray, green."
 related:
   - aromanticism

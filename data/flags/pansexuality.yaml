@@ -19,7 +19,7 @@ colors:
   - yellow
   - blue
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "3 horizontal stripes. From top to bottom: magenta, yellow, cyan."
 related:
   - pansexuality

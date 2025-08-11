@@ -2,60 +2,82 @@
 	min-inline-size: 0;
 }
 
-.Input label small {
-	display: block;
-}
-
 /* Text */
 
 .Input--text {
 	display: flex;
 	flex-direction: column;
+
+	label {
+		padding-block-end: 0.25rem;
+	}
+
+	input {
+		background: var(--color-box);
+		border: var(--border-interactive);
+		border-radius: var(--border-radius);
+		color: var(--color-on-box);
+		padding-block: 0.75rem;
+		padding-inline: 1rem;
+	}
 }
 
-.Input--text label {
-	padding-block-end: 0.25rem;
-}
-
-.Input--text input {
-	background: var(--color-box);
-	border: var(--border-interactive);
-	border-radius: var(--border-radius);
-	color: var(--color-on-box);
-	padding-block: 0.75rem;
-	padding-inline: 1rem;
-}
-
-/* Checkbox */
+/* Checkbox: Shared */
 
 .Input--checkbox {
-	--size: 1.625rem;
+	label {
+		display: flex;
+		gap: 0.5rem;
+	}
 
-	align-items: center;
-	display: flex;
-	gap: 0.5rem;
+	input {
+		appearance: none;
+		aspect-ratio: 1;
+		border-radius: var(--border-radius);
+		flex-shrink: 0;
+		inline-size: 1.625rem;
+		position: relative;
+		z-index: 1;
+	}
 }
 
-.Input--checkbox input {
-	appearance: none;
-	background: var(--background, var(--color-box));
-	block-size: var(--size);
-	border: var(--border-interactive);
-	border-radius: var(--border-radius);
-	color: var(--foreground, var(--color-on-box));
-	inline-size: var(--size);
-	position: relative;
+/* Checkbox: Icon */
+
+.Input--checkbox:has(svg) {
+	input {
+		position: absolute;
+	}
+
+	svg {
+		border-radius: var(--border-radius);
+		color: var(--color-border-interactive);
+		flex-shrink: 0;
+		opacity: 0.5;
+	}
+
+	input:checked + svg {
+		opacity: 1;
+	}
 }
 
-.Input--checkbox input:checked::before {
-	block-size: calc(var(--size) * 0.4);
-	border: 0.1875rem solid currentcolor;
-	border-block-start: none;
-	border-inline-end: none;
-	content: "";
-	inline-size: calc(var(--size) * 0.7);
-	inset-block-start: 20%;
-	inset-inline-start: 15%;
-	position: absolute;
-	rotate: -48deg;
+/* Checkbox: Check */
+
+.Input--checkbox:not(:has(svg)) {
+	input {
+		background: var(--background, var(--color-box));
+		border: var(--border-interactive);
+	}
+
+	input:checked::before {
+		block-size: 40%;
+		border: 0.1875rem solid var(--foreground, var(--color-on-box));
+		border-block-start: none;
+		border-inline-end: none;
+		content: "";
+		inline-size: 70%;
+		inset-block-start: 20%;
+		inset-inline-start: 15%;
+		position: absolute;
+		rotate: -48deg;
+	}
 }

@@ -19,7 +19,7 @@ colors:
   - black
   - purple
 patterns:
-  - stripesHorizontal
+  - horizontal
   - symbol
 alt: 5 horizontal stripes range from black to dark purple to light purple. In the center of the flag, there is a yellow crescent moon. A white circle is nestled inside of the moon.
 related:

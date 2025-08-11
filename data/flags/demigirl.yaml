@@ -23,7 +23,7 @@ colors:
   - pink
   - white
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "7 horizontal stripes. From top to bottom: gray, light gray, light pink, white, light pink, light gray, gray."
 related:
   - demigender

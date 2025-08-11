@@ -14,5 +14,5 @@ colors:
   - white
   - gray
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "4 horizontal stripes. From top to bottom: blue, light teal, white, gray."

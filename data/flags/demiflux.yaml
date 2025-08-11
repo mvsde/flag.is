@@ -13,7 +13,7 @@ colors:
   - yellow
   - blue
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "7 horizontal stripes. From top to bottom: gray, light gray, light pink, yellow, light blue, light gray, gray."
 related:
   - demigender

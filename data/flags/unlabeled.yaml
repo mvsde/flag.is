@@ -15,7 +15,7 @@ colors:
   - blue
   - orange
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "4 horizontal stripes. From top to bottom: light green, white, light blue, light orange."
 related:
   - queer

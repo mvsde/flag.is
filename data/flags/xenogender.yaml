@@ -18,7 +18,7 @@ colors:
   - blue
   - purple
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: 7 horizontal stripes make a pastel rainbow.
 related:
   - non-binary

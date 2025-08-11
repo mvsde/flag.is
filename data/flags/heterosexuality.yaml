@@ -17,5 +17,5 @@ colors:
   - white
   - pink
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "3 horizontal stripes. From top to bottom: blue, white, pink."

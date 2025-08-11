@@ -18,7 +18,7 @@
 	</div>
 {% endmacro %}
 
-{% macro checkbox(label, foreground, background, id, name, value, attributes) %}
+{% macro checkbox(label, foreground, background, icon, id, name, value, attributes) %}
 	<div
 		class="Input Input--checkbox"
 		style="
@@ -30,14 +30,17 @@
 			{% endif %}
 		"
 	>
-		<input
-			type="checkbox"
-			id="{{ id }}"
-			name="{{ name }}"
-			value="{{ value }}"
-			{{ renderAttributes(attributes) }}
-		>
 		<label for="{{ id }}">
+			<input
+				type="checkbox"
+				id="{{ id }}"
+				name="{{ name }}"
+				value="{{ value }}"
+				{{ renderAttributes(attributes) }}
+			>
+			{% if icon %}
+				{% include "icons/" ~ icon ~ ".svg" %}
+			{% endif %}
 			<span>{{ label|safe }}</span>
 		</label>
 	</div>

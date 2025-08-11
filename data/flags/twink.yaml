@@ -18,7 +18,7 @@ colors:
   - white
   - yellow
 patterns:
-  - stripesHorizontal
+  - horizontal
   - symbol
 alt: "3 horizontal stripes. From top to bottom: pink, white, light yellow. In the center, there is a pair of black, interlinking Mars symbols."
 related:

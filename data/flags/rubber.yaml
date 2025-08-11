@@ -16,6 +16,6 @@ colors:
   - red
   - yellow
 patterns:
-  - stripesHorizontal
+  - horizontal
   - symbol
 alt: "Black background, 5 horizontal stripes with a kink. From top to bottom: small red, big yellow, small red, big black, small red."

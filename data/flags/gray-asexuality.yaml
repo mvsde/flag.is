@@ -23,7 +23,7 @@ colors:
   - gray
   - white
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "5 horizontal stripes. From top to bottom: purple, gray, white, gray, purple."
 related:
   - asexuality

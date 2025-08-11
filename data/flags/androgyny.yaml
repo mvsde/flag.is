@@ -15,7 +15,7 @@ aspectRatio: 1.66667
 colors:
   - purple
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "12 horizontal stripes. From top to bottom: gradient from darker purple to lighter purple."
 related:
   - androgyny

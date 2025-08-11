@@ -20,7 +20,7 @@ colors:
   - purple
   - black
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "4 horizontal stripes. From top to bottom: yellow, white, purple, black."
 related:
   - non-binary

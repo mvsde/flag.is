@@ -17,7 +17,7 @@ colors:
   - blue
   - yellow
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "6 horizontal stripes. From top to bottom: pink, lighter pink, gray, lighter blue, blue, yellow."
 related:
   - gender-fluidity

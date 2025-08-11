@@ -23,7 +23,7 @@ colors:
   - white
   - green
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "7 horizontal stripes. From top to bottom: black, gray, white, light green, white, gray, black."
 related:
   - agender

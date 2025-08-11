@@ -1,14 +1,14 @@
 chevron:
   name: Chevron
-lettering:
-  name: Lettering
-solid:
-  name: Solid
-stripesDiagonal:
-  name: Stripes <small>Diagonal</small>
-stripesHorizontal:
-  name: Stripes <small>Horizontal</small>
-stripesVertical:
-  name: Stripes <small>Vertical</small>
 symbol:
   name: Symbol
+lettering:
+  name: Lettering
+diagonal:
+  name: Diagonal
+horizontal:
+  name: Horizontal
+vertical:
+  name: Vertical
+solid:
+  name: Solid

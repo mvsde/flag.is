@@ -20,7 +20,7 @@ colors:
   - white
   - pink
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "7 horizontal stripes. From top to bottom: dark orange, medium orange, light orange, white, light pink, medium pink, dark pink."
 related:
   - lesbian

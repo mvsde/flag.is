@@ -14,6 +14,6 @@ colors:
   - blue
   - white
 patterns:
-  - stripesHorizontal
+  - horizontal
   - symbol
 alt: Horizontal stripes alternate between black and blue, with one white stripe in the middle. A red heart is in the top left corner.

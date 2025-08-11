@@ -21,7 +21,7 @@ colors:
   - yellow
   - blue
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "5 horizontal stripes. From top to bottom: black, gray, pink, yellow, light blue."
 related:
   - polygender

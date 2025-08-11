@@ -20,7 +20,7 @@ colors:
   - blue
   - purple
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "7 horizontal stripes. From top to bottom: teal, washed-out green, light green, white, light blue, medium blue, dark blue."
 related:
   - gay

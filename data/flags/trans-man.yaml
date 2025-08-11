@@ -22,7 +22,7 @@ colors:
   - pink
   - blue
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: 7 horizontal stripes. The top and bottom stripes are pink. The middle stripes are all light blues.
 related:
   - transgender

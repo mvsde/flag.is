@@ -64,9 +64,9 @@ properties:
         - chevron
         - lettering
         - solid
-        - stripesDiagonal
-        - stripesHorizontal
-        - stripesVertical
+        - diagonal
+        - horizontal
+        - vertical
         - symbol
   alt:
     type: string

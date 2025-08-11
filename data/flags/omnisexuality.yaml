@@ -19,7 +19,7 @@ colors:
   - purple
   - blue
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "5 horizontal stripes. From top to bottom: light pink, bright pink, dark purple, blue, light blue."
 related:
   - pansexuality

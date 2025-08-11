@@ -18,7 +18,7 @@ colors:
   - green
   - gray
 patterns:
-  - stripesHorizontal
+  - horizontal
   - symbol
 alt: "3 horizontal stripes. From top to bottom: a large white stripe, a thin green stripe, and a large gray stripe. On the left side of the flag, a large black chevron points to the right."
 related:

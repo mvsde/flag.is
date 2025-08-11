@@ -21,7 +21,7 @@ colors:
   - black
   - blue
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "5 horizontal stripes. From top to bottom: pink, white, purple, black, blue."
 related:
   - gender-fluidity

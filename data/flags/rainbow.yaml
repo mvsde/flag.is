@@ -16,7 +16,7 @@ colors:
   - blue
   - purple
 patterns:
-  - stripesHorizontal
+  - horizontal
 alt: "6 horizontal stripes make a rainbow: red, orange, yellow, green, blue, purple."
 related:
   - rainbow
