@@ -8,9 +8,48 @@
 
 		<title>{% if not isHome %}{{ title }} | {% endif %}flag.is</title>
 
-		<script type="speculationrules">{% include "speculation-rules.json" %}</script>
-		<link rel="stylesheet" href="/css/main.css">
-		<script type="module" src="/js/main.js"></script>
+		<script type="speculationrules">
+			{
+				"prerender": [
+					{
+						"where": {
+							"and": [
+								{ "href_matches": "/*" },
+								{ "not": { "selector_matches": ".is-back" } }
+							]
+						},
+						"eagerness": "moderate"
+					}
+				]
+			}
+		</script>
+		<style>
+			@layer base, components, utilities;
+
+			/* Base */
+			@import url("/css/base/tokens.css") layer(base);
+			@import url("/css/base/global.css") layer(base);
+			@import url("/css/base/typography.css") layer(base);
+
+			/* Components */
+			@import url("/css/components/fieldset.css") layer(components);
+			@import url("/css/components/footer.css") layer(components);
+			@import url("/css/components/input.css") layer(components);
+			@import url("/css/components/note.css") layer(components);
+			@import url("/css/components/rich-text.css") layer(components);
+			@import url("/css/components/search.css") layer(components);
+			@import url("/css/components/skip-link.css") layer(components);
+
+			/* Utilities */
+			@import url("/css/utilities/container.css") layer(utilities);
+			@import url("/css/utilities/display.css") layer(utilities);
+			@import url("/css/utilities/visually-hidden.css") layer(utilities);
+		</style>
+		<script type="module">
+			/* Components */
+			import "/js/components/back.js";
+			import "/js/components/search.js";
+		</script>
 
 		{% if description %}
 			<meta name="description" content="{{ description }}">
