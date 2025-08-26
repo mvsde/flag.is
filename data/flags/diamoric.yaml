@@ -1,0 +1,24 @@
+name: Diamoric
+aliases:
+  - Adonian
+  - Adonic
+  - Cypric
+  - Dionysian
+description: Attraction experienced by non-binary people that can’t be described as “same gender” or “other gender”.
+links:
+  - title: LGBTQIA+ Wiki
+    href: https://lgbtqia.fandom.com/wiki/Diamoric
+  - title: Pronouns.page
+    href: https://en.pronouns.page/terminology?filter=diamoric
+aspectRatio: 1.66667
+colors:
+  - green
+  - white
+  - red
+  - yellow
+patterns:
+  - horizontal
+  - symbol
+alt: A light green field with a white horizontal stripe down the middle. In the center of the stripe is a burgundy-colored myrtle motif.
+related:
+  - non-binary
