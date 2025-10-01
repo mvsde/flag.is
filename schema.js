@@ -33,8 +33,7 @@ async function addSchema(file) {
  * @param {SchemaID} schemaID
  */
 async function validateData(filePattern, schemaID) {
-	// eslint-disable-next-line n/no-unsupported-features/node-builtins
-	const files = await fs.glob(filePattern);
+	const files = fs.glob(filePattern);
 
 	for await (const file of files) {
 		const data = await loadFile(file);
