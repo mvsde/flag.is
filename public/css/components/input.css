@@ -31,11 +31,13 @@
 	}
 
 	input {
+		--size: 1.625rem;
+
 		appearance: none;
-		aspect-ratio: 1;
+		block-size: var(--size);
 		border-radius: var(--border-radius);
 		flex-shrink: 0;
-		inline-size: 1.625rem;
+		inline-size: var(--size);
 		position: relative;
 		z-index: 1;
 	}
